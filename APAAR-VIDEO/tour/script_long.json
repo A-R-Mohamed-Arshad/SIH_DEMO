@@ -1,0 +1,347 @@
+[
+ {
+  "id": "t00_hook",
+  "section": "Problem",
+  "text": "Every year, lakhs of students join AICTE-approved colleges. Each admission should be a record that is accurate, verifiable and fair to the student. But today, oversight mostly sees totals.",
+  "title": "The problem",
+  "points": [
+   "Lakhs of admissions every year",
+   "Each one should be a verifiable record",
+   "Today oversight sees totals"
+  ]
+ },
+ {
+  "id": "t01_problem",
+  "section": "Problem",
+  "text": "A college reports how many students it admitted, not who they are. Excess admissions hide inside those numbers. The same student can be enrolled at two colleges at once, and nobody notices. And when an employer asks whether a degree is real, the answer is a letter and a long wait.",
+  "title": "The problem",
+  "points": [
+   "Totals hide excess admissions",
+   "Same student, two colleges",
+   "Degree checks take weeks"
+  ]
+ },
+ {
+  "id": "t02_solution",
+  "section": "The idea",
+  "text": "The APAAR Student Register fixes this with one simple idea. Every enrolment is stored as an individual student record, keyed to the student's APAAR ID. Every number on every dashboard is computed from those records, never typed in as a total. Let's walk through every page, role by role.",
+  "title": "The idea",
+  "points": [
+   "One record per student",
+   "Keyed to the APAAR ID",
+   "Every figure computed from records"
+  ]
+ },
+ {
+  "id": "t03_login",
+  "section": "Sign in",
+  "text": "This is the sign-in page. The prototype has seven roles: institution staff, institution admin, AICTE analyst and AICTE admin, auditor, employer or verifier, and the student. Demo accounts sign in with one click. Text size can be raised for accessibility, and every page clearly says that the data is synthetic.",
+  "title": "Sign in · 7 roles",
+  "points": [
+   "Institution staff and admin",
+   "AICTE analyst and admin",
+   "Auditor, verifier, student",
+   "Text size control, synthetic-data notice"
+  ]
+ },
+ {
+  "id": "t04_inst_dash",
+  "section": "Institution dashboard",
+  "text": "An institution starts on its dashboard. At the top are the key figures: approved intake, students within intake, seats over intake, supernumerary students, and open flags. Below, every programme has a seat strip. Each small square is one real seat: green is occupied, empty is vacant, and red would be an admission over the approved intake. Recent uploads and open flags sit on the right.",
+  "title": "Institution dashboard",
+  "points": [
+   "Intake, within intake, over intake",
+   "Seat strip: one square per seat",
+   "Recent uploads and open flags"
+  ]
+ },
+ {
+  "id": "t05_upload",
+  "section": "Upload",
+  "text": "To add students in bulk, staff download the official template as Excel or CSV, fill it in, and upload it. The file is checked before anything is saved. All twenty-six validation rules run on every single row, and the summary shows how many rows are valid, need a warning, need review, or have errors.",
+  "title": "Upload student records",
+  "points": [
+   "Excel or CSV template",
+   "Checked before anything is saved",
+   "26 rules on every row"
+  ]
+ },
+ {
+  "id": "t06_fix",
+  "section": "Fix errors",
+  "text": "Errors are listed row by row, with the rule that failed and a plain explanation. Here, a mistyped APAAR ID gets a did-you-mean suggestion from the registry check, which is simulated in this prototype. One click accepts it. Other rows are fixed in a small editor, right inside the page. A duplicate row can simply be left out.",
+  "title": "Fix errors row by row",
+  "points": [
+   "Rule and plain explanation per error",
+   "Did-you-mean for APAAR IDs (simulated)",
+   "Edit in place, leave duplicates out"
+  ]
+ },
+ {
+  "id": "t07_commit",
+  "section": "Commit",
+  "text": "Before committing, the register shows exactly what will happen to seat positions, programme by programme. A row with an error is never committed. Staff confirm, and the records are saved in one step. The national register updates live.",
+  "title": "Commit",
+  "points": [
+   "Seat impact shown before saving",
+   "Rows with errors are never committed",
+   "National view updates live"
+  ]
+ },
+ {
+  "id": "t08_add",
+  "section": "Add a student",
+  "text": "Single admissions use the Add a student form. It runs the very same twenty-six rules as the upload, so there is no back door. For a student under eighteen, the form asks whether guardian consent has been recorded. Sensitive fields, like social category, are optional and clearly marked.",
+  "title": "Add a student",
+  "points": [
+   "Same 26 rules as upload",
+   "Guardian consent for under-18s",
+   "Sensitive fields optional"
+  ]
+ },
+ {
+  "id": "t09_records",
+  "section": "Student records",
+  "text": "Student records can be searched by name, roll number or APAAR ID, and sorted by any column. APAAR IDs are masked, so only the last digits show. Opening a record shows the student, the enrolment, any flags, and a full history of every change.",
+  "title": "Student records",
+  "points": [
+   "Search by name, roll or APAAR ID",
+   "Sort by any column",
+   "APAAR IDs masked"
+  ]
+ },
+ {
+  "id": "t10_record_detail",
+  "section": "Record detail",
+  "text": "Every correction needs a reason, which is kept in the history. Status changes, such as cancelled or graduated, follow allowed transitions only. From here, the institution also issues a signed enrolment record for the student, and can revoke it later with a reason that verifiers will see.",
+  "title": "Record detail",
+  "points": [
+   "Corrections need a reason",
+   "Allowed status transitions only",
+   "Issue and revoke signed records",
+   "Full history"
+  ]
+ },
+ {
+  "id": "t11_seatcheck",
+  "section": "Seat check",
+  "text": "The seat check answers one question before an admission is made: will one more student cross the approved intake or a category cap? It is advice before admission, not a penalty after. College admission software can ask the same question through the API.",
+  "title": "Seat check",
+  "points": [
+   "Ask before admitting",
+   "Intake and category caps",
+   "Same check through the API"
+  ]
+ },
+ {
+  "id": "t12_flags",
+  "section": "Flags",
+  "text": "When a rule finds something that needs a person to look at it, the register raises a flag. Each flag shows its evidence and its rule. The institution responds with a note, AICTE can ask for clarification, resolve or dismiss, and every step is kept in the history. A flag is a question, never an accusation.",
+  "title": "Flags",
+  "points": [
+   "Evidence and rule on every flag",
+   "Respond, clarify, resolve, dismiss",
+   "Every step kept in history"
+  ]
+ },
+ {
+  "id": "t13_corrections",
+  "section": "Correction requests",
+  "text": "Students can spot mistakes too. Their correction requests arrive here. Staff accept a request, which opens the correction form with the change ready, or reject it with a reason the student will see.",
+  "title": "Correction requests",
+  "points": [
+   "Requests come from students",
+   "Accept opens the correction form",
+   "Reject with a visible reason"
+  ]
+ },
+ {
+  "id": "t14_reports_access",
+  "section": "Reports and system access",
+  "text": "Reports download as CSV files, protected against spreadsheet formula injection. And on System access, an institution admin creates API keys with limited scopes, so its own admission software can push enrolments and run seat checks directly.",
+  "title": "Reports and system access",
+  "points": [
+   "CSV reports, formula-safe",
+   "Scoped API keys for college software",
+   "Push enrolments, run seat checks"
+  ]
+ },
+ {
+  "id": "t15_national",
+  "section": "National register",
+  "text": "Now the AICTE view. The national register shows institutions, programmes, approved intake, students within intake, utilisation and seats over intake, for the whole country, all computed from records. Excess alerts name the exact programme: Narmada's MBA has sixty-eight students against an approved intake of sixty. Below are breakdowns by state, by nationality, APAAR coverage, and open flags by rule.",
+  "title": "National register (AICTE)",
+  "points": [
+   "Country-wide figures from records",
+   "Excess alerts name the programme",
+   "State, nationality, APAAR coverage"
+  ]
+ },
+ {
+  "id": "t16_national_tabs",
+  "section": "National register",
+  "text": "The programmes tab lists every programme with its seats, and submission status shows which colleges have declared their submission complete. Filters narrow everything by year, state and discipline, and the page updates live as institutions upload.",
+  "title": "National register · tabs",
+  "points": [
+   "Programmes with seat positions",
+   "Submission status per college",
+   "Filters and live updates"
+  ]
+ },
+ {
+  "id": "t17_priority",
+  "section": "Review priority",
+  "text": "Review priority helps AICTE decide where to look first. Institutions are ranked by transparent reasons, such as seats over intake, supernumerary caps, conflicts with other colleges, unverified APAAR IDs and uncorrected upload errors. The page says clearly that a high rank is a reason to review, not evidence of wrongdoing.",
+  "title": "Review priority",
+  "points": [
+   "Ranked by transparent reasons",
+   "Points shown per reason",
+   "A reason to review, not a verdict"
+  ]
+ },
+ {
+  "id": "t18_queue",
+  "section": "Review queue",
+  "text": "The review queue lists every open flag across the country. AICTE can request clarification with a note, and the institution sees it immediately. Duplicates across colleges appear here too, and the other institution's identity is withheld, to protect the student.",
+  "title": "Review queue",
+  "points": [
+   "Every open flag nationally",
+   "Clarification requests with notes",
+   "Other institution's identity withheld"
+  ]
+ },
+ {
+  "id": "t19_intake",
+  "section": "Intake and caps",
+  "text": "On Intake and caps, AICTE sets each programme's approved intake with its approval reference, and the caps for supernumerary categories. Every seat count in the system is measured against these numbers.",
+  "title": "Intake and caps",
+  "points": [
+   "Approved intake per programme",
+   "Approval reference kept",
+   "Supernumerary caps"
+  ]
+ },
+ {
+  "id": "t20_identity",
+  "section": "Identity candidates",
+  "text": "Identity candidates catch the same person enrolled twice under different spellings. Name matching understands Indian spelling and transliteration variants, and every match shows its reasons and weights. A person decides: same person, or different people. Nothing is merged automatically.",
+  "title": "Identity candidates",
+  "points": [
+   "Indian-name-aware matching",
+   "Reasons and weights shown",
+   "A person decides; never auto-merged"
+  ]
+ },
+ {
+  "id": "t21_rules_integrations",
+  "section": "Rules and integrations",
+  "text": "The rules page lists all twenty-six validation rules with their codes and severity, so every flag can be traced to a published rule. The integrations page is honest about what is connected: the APAAR registry check is simulated, and DigiLocker, AISHE and the approval portal still need official access.",
+  "title": "Rules and integrations",
+  "points": [
+   "26 published rules with severity",
+   "Registry check: simulated",
+   "DigiLocker, AISHE: need official access"
+  ]
+ },
+ {
+  "id": "t22_student",
+  "section": "Student",
+  "text": "Now the student. Ananya sees her own record exactly as her college reported it. She can share a signed enrolment record, and she chooses exactly which details to include. The register creates a token and a QR code. If something is wrong, she sends a correction request to her college.",
+  "title": "Student view",
+  "points": [
+   "Own record as reported",
+   "Choose which details to share",
+   "Token and QR code",
+   "Ask for a correction"
+  ]
+ },
+ {
+  "id": "t23_verify",
+  "section": "Verify",
+  "text": "An employer opens the public verify page and pastes the token. Six checks run in order: structure, a known issuer key, the signature, that the shared values match, the validity period, and revocation. All six pass, and only the details Ananya chose are shown. Now watch: change a single value, and verification fails immediately.",
+  "title": "Public verification",
+  "points": [
+   "Six checks in order",
+   "Only chosen details shown",
+   "One changed value fails"
+  ]
+ },
+ {
+  "id": "t24_consent",
+  "section": "Consent requests",
+  "text": "Employers can also request verification with an APAAR ID and date of birth. The response is the same whether or not the student exists, so nobody can probe the register. The student reviews the request, sees exactly what will be shared, and allows or declines. Only after she allows does the employer see a result.",
+  "title": "Consent-based requests",
+  "points": [
+   "Same answer whether or not the student exists",
+   "Student sees what will be shared",
+   "Result only after approval"
+  ]
+ },
+ {
+  "id": "t25_minor",
+  "section": "Students under 18",
+  "text": "Students under eighteen are protected by rule R015. Their record cannot be shared or verified until the institution records a guardian's consent. The student sees exactly why sharing is on hold.",
+  "title": "Students under 18",
+  "points": [
+   "Rule R015",
+   "Held until guardian consent",
+   "Reason shown to the student"
+  ]
+ },
+ {
+  "id": "t26_audit",
+  "section": "Audit",
+  "text": "Every sign-in, change and access lands in a hash-chained audit trail. Each event's hash covers the one before it, so any edit to history breaks the chain. The auditor verifies the whole chain with one click, and can export it.",
+  "title": "Audit trail",
+  "points": [
+   "Every action recorded",
+   "Each hash covers the one before",
+   "One-click chain verification, export"
+  ]
+ },
+ {
+  "id": "t27_status",
+  "section": "System status",
+  "text": "Finally, a public system status page states honestly what is built and tested, what is simulated, and what still needs official access, each with the evidence behind it.",
+  "title": "System status",
+  "points": [
+   "Built and tested",
+   "Simulated",
+   "Needs official access"
+  ]
+ },
+ {
+  "id": "t28_why",
+  "section": "Why it is better",
+  "text": "So why is this better? Seats are counted from real records, not declared totals, so excess admissions cannot hide. Duplicates across colleges are caught early, while identities stay private. Students control what they share. Employers verify in seconds instead of weeks. And every action is accountable, in a chain no one can quietly rewrite.",
+  "title": "Why it is better",
+  "points": [
+   "Seats from records, not totals",
+   "Duplicates caught, identities private",
+   "Students control sharing",
+   "Verification in seconds",
+   "Accountable, tamper-evident history"
+  ]
+ },
+ {
+  "id": "t29_arch",
+  "section": "Under the hood",
+  "text": "Under the hood, a React interface talks to a FastAPI service. One validation engine is the only writer of student records, feeding the seat ledger, identity matching and signed credentials, with every step in the audit chain, on PostgreSQL.",
+  "title": "Under the hood",
+  "points": [
+   "React interface, FastAPI service",
+   "One validation engine writes records",
+   "PostgreSQL, audit chain"
+  ]
+ },
+ {
+  "id": "t30_close",
+  "section": "Close",
+  "text": "APAAR Student Register. Every seat counted. Every student verifiable. Built for Smart India Hackathon, problem statement S-I-H two six two six three.",
+  "title": "APAAR Student Register",
+  "points": [
+   "SIH26263",
+   "apaar-student-register.vercel.app"
+  ]
+ }
+]

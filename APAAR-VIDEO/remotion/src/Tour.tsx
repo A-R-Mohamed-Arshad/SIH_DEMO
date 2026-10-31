@@ -14,7 +14,7 @@ import { C, FONT, MONO, clamp, ease } from "./theme";
 type Key = { t: number; zoom: number; cx: number; cy: number };
 type Item = { kind: "clip" | "scene"; name: string; start: number; dur: number; from?: number; rate?: number; keys?: Key[]; url?: string; seg: string; still?: boolean };
 type Sent = { text: string; t0: number; t1: number };
-type Seg = { id: string; section: string; title: string; points: string[]; start: number; dur: number; voice: string | null; voiceStart: number; text: string; sentences: Sent[] };
+type Seg = { id: string; section: string; title: string; role: string; points: string[]; start: number; dur: number; voice: string | null; voiceStart: number; text: string; sentences: Sent[] };
 const T = tour as unknown as { fps: number; total: number; segments: Seg[]; items: Item[]; clicks: [number, number, number][] };
 export const TOUR_FRAMES = Math.ceil(T.total * 30);
 const FPS = 30;
@@ -110,7 +110,7 @@ const Rail: React.FC<{ seg: Seg; index: number }> = ({ seg, index }) => {
   const inP = interpolate(fr, [0, 10], [0, 1], { ...clamp, easing: ease.out });
   const vs = seg.voiceStart - seg.start, vd = Math.max(1, seg.dur - vs - 0.3);
   const n = seg.points.length;
-  const pages = T.segments.filter((s) => s.points.length && !["t00_hook", "t01_problem", "t02_solution", "t28_why", "t29_arch", "t30_close"].includes(s.id));
+  const pages = T.segments.filter((s) => s.points.length);
   const pageNo = pages.findIndex((s) => s.id === seg.id) + 1;
   return (
     <div style={{ position: "absolute", left: RAIL.x, top: RAIL.y, width: RAIL.w, height: RAIL.h, fontFamily: FONT, color: C.white, opacity: inP,
@@ -131,7 +131,7 @@ const Rail: React.FC<{ seg: Seg; index: number }> = ({ seg, index }) => {
       })}
       {pageNo > 0 && (
         <div style={{ position: "absolute", left: 0, bottom: 0, fontSize: 16, color: C.mist, fontFamily: MONO }}>
-          page {pageNo} of {pages.length}
+          step {pageNo} of {pages.length}
           <div style={{ marginTop: 8, width: RAIL.w, height: 4, background: "rgba(255,255,255,.12)", borderRadius: 2 }}>
             <div style={{ width: `${(pageNo / pages.length) * 100}%`, height: 4, background: C.saffron, borderRadius: 2 }} />
           </div>
@@ -145,25 +145,15 @@ const Rail: React.FC<{ seg: Seg; index: number }> = ({ seg, index }) => {
 const TopBar: React.FC<{ seg: Seg }> = ({ seg }) => (
   <div style={{ position: "absolute", left: WIN.x, top: 40, right: 44, height: 60, display: "flex", alignItems: "center", fontFamily: FONT, color: C.white }}>
     <div style={{ fontSize: 24, fontWeight: 700 }}>APAAR Student Register</div>
-    <div style={{ marginLeft: 18, fontSize: 18, color: C.mist }}>live walkthrough · synthetic data</div>
+    <div style={{ marginLeft: 18, fontSize: 18, color: C.mist }}>one student's journey · synthetic data</div>
     <div style={{ marginLeft: "auto", display: "flex", gap: 8 }}>
-      {["Institution", "AICTE", "Student", "Verifier", "Audit"].map((r) => {
-        const on = roleOf(seg.id) === r;
+      {["Institution", "AICTE", "Student", "Employer", "Audit"].map((r) => {
+        const on = seg.role === r;
         return <div key={r} style={{ padding: "6px 14px", borderRadius: 16, fontSize: 16, fontWeight: 700, background: on ? C.saffron : "rgba(255,255,255,.08)", color: on ? "#fff" : C.mist }}>{r}</div>;
       })}
     </div>
   </div>
 );
-const roleOf = (id: string) => {
-  const n = parseInt(id.slice(1, 3), 10);
-  if (n >= 3 && n <= 14) return "Institution";
-  if (n >= 15 && n <= 21) return "AICTE";
-  if (n === 22 || n === 25) return "Student";
-  if (n === 23 || n === 24) return "Verifier";
-  if (n === 26 || n === 27) return "Audit";
-  return "";
-};
-
 /** Sentence-timed captions, split into short phrases. */
 const Captions: React.FC = () => {
   const fr = useCurrentFrame();

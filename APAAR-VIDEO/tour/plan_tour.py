@@ -22,44 +22,31 @@ TIMING = {}
 for _p in sorted((HERE / "voice").glob("timing*.json")):
     TIMING.update(json.loads(_p.read_text()))
 
-LEAD, TAIL = 0.25, 0.35                   # silence before / after each line
+LEAD, TAIL = 0.4, 0.75                   # silence before / after each line
 MAX_RATE = 2.2                            # footage never plays slower than real time; longer footage is sped up to this
 ZOOM_CLICK, ZOOM_BOX = 1.65, 1.28
 HOST = "apaar-student-register.vercel.app"
 
 # segment → visuals. clip: name, optional (from, to) in seconds or event refs "click:Label"/"box:label"/"beat:label" with offsets.
 V = {
-    "t00_hook": [{"scene": "S1Open"}],
-    "t01_problem": [{"scene": "HiddenExcess", "w": 1}, {"scene": "CountedTwice", "w": 1}, {"scene": "LetterAndWait", "w": 1}],
-    "t02_solution": [{"scene": "OneRegister", "w": .8}, {"clip": "s03_dashboard", "w": 1}],
-    "t03_login": [{"clip": "n_login"}],
-    "t04_inst_dash": [{"clip": "n_dash"}],
-    "t05_upload": [{"clip": "s04_upload"}],
-    "t06_fix": [{"clip": "s05_fix", "to": "beat:ff_start", "pad": .4}, {"clip": "s05_fix", "from": "beat:ff_start", "to": "click:save row#1", "pad": .6}],
-    "t07_commit": [{"clip": "s05_fix", "from": "click:All rows", "pad": -.5}, {"clip": "s06_commit_inst"}, {"clip": "s06_commit_aicte", "from": "beat:live_update", "pad": -1.2}],
-    "t08_add": [{"clip": "n_add"}],
-    "t09_records": [{"clip": "n_records"}],
-    "t10_record_detail": [{"clip": "n_record_detail"}, {"clip": "s12_issue_inst", "from": "click:Signed records tab", "pad": -.4}],
-    "t11_seatcheck": [{"clip": "s07_seatcheck"}],
-    "t12_flags": [{"clip": "s10_workflow_aicte"}, {"clip": "s10_workflow_auto"}],
-    "t13_corrections": [{"clip": "n_corrections"}],
-    "t14_reports_access": [{"clip": "n_reports"}, {"clip": "n_access"}],
-    "t15_national": [{"clip": "s01_national", "to": "click:Programmes tab", "pad": -.3}, {"clip": "n_national_more", "to": "click:Programmes tab", "pad": -.3}],
-    "t16_national_tabs": [{"clip": "n_national_more", "from": "click:Programmes tab", "pad": -.6}],
-    "t17_priority": [{"clip": "s11_priority", "to": "click:Identity candidates", "pad": -.2}],
-    "t18_queue": [{"clip": "n_queue"}, {"clip": "s09_privacy_inst"}],
-    "t19_intake": [{"clip": "n_intake"}],
-    "t20_identity": [{"clip": "n_identity"}, {"clip": "s11_priority", "from": "click:Identity candidates", "pad": -.4}],
-    "t21_rules_integrations": [{"clip": "n_rules"}, {"clip": "n_integrations"}],
-    "t22_student": [{"clip": "s12_issue_student"}, {"clip": "n_student_correction"}],
-    "t23_verify": [{"clip": "s13_verify"}],
-    "t24_consent": [{"clip": "s14_consent_verifier"}, {"clip": "s14_consent_student"}, {"clip": "s14_consent_result"}],
-    "t25_minor": [{"clip": "s16_minor"}],
-    "t26_audit": [{"clip": "s15_audit"}],
-    "t27_status": [{"clip": "s17_status"}],
-    "t28_why": [{"scene": "WhyBetter"}],
-    "t29_arch": [{"scene": "S5Architecture"}],
-    "t30_close": [{"scene": "S6Close"}],
+    "k00_meet": [{"clip": "n_student_correction", "to": "box:ask", "pad": -.2}, {"scene": "S1Open", "w": 1}],
+    "k01_problem": [{"scene": "HiddenExcess", "w": 1}, {"scene": "CountedTwice", "w": 1}, {"scene": "LetterAndWait", "w": 1}],
+    "k02_idea": [{"scene": "OneRegister", "w": 1}, {"clip": "s03_dashboard"}],
+    "k03_upload": [{"clip": "s04_upload"}],
+    "k04_fix": [{"clip": "s05_fix", "to": "beat:ff_start", "pad": .3}, {"clip": "s05_fix", "from": "click:All rows", "pad": -.5}, {"clip": "s06_commit_inst"}],
+    "k05_seat": [{"clip": "s07_seatcheck"}],
+    "k05b_dashboard": [{"clip": "n_dash"}],
+    "k07b_flags": [{"clip": "s10_workflow_aicte"}, {"clip": "s10_workflow_auto"}],
+    "k06_national": [{"clip": "s06_commit_aicte", "from": "beat:live_update", "pad": -1.5}, {"clip": "s01_national", "to": "click:Programmes tab", "pad": -.3}],
+    "k07_priority": [{"clip": "s11_priority", "to": "click:Identity candidates", "pad": -.2}],
+    "k08_duplicate": [{"clip": "s09_privacy_inst"}, {"clip": "s11_priority", "from": "click:Identity candidates", "pad": -.4}],
+    "k09_share": [{"clip": "s12_issue_inst", "from": "click:Signed records tab", "pad": -.4}, {"clip": "s12_issue_student"}],
+    "k10_verify": [{"clip": "s13_verify"}],
+    "k11_consent": [{"clip": "s14_consent_student"}, {"clip": "s14_consent_result"}],
+    "k12_minor": [{"clip": "s16_minor"}],
+    "k13_audit": [{"clip": "s15_audit"}, {"clip": "s17_status"}],
+    "k14_why": [{"scene": "WhyBetter"}],
+    "k15_close": [{"scene": "S6Close"}],
 }
 URL = {"n_login": "/#/login", "n_dash": "/#/inst", "s03_dashboard": "/#/inst", "s04_upload": "/#/inst/upload", "s05_fix": "/#/inst/imports/…",
        "s06_commit_inst": "/#/inst/imports/…", "s06_commit_aicte": "/#/aicte", "n_add": "/#/inst/add", "n_records": "/#/records",
@@ -153,7 +140,7 @@ def main():
         voice = None
         if tm:
             shutil.copy(HERE / "voice" / f"{sid}.wav", PUB_VOICE / f"{sid}.wav"); voice = f"tour/{sid}.wav"
-        segs.append({"id": sid, "section": s["section"], "title": s.get("title", s["section"]), "points": s.get("points", []), "start": round(t, 3), "dur": round(dur, 3), "voice": voice,
+        segs.append({"id": sid, "section": s["section"], "title": s.get("title", s["section"]), "points": s.get("points", []), "role": s.get("role", ""), "start": round(t, 3), "dur": round(dur, 3), "voice": voice,
                      "voiceStart": round(t + LEAD, 3), "text": s["text"], "sentences": sents})
         vis = V[sid]
         # resolve clip ranges
