@@ -318,5 +318,45 @@
     "end": 10.427
    }
   ]
+ },
+ "k05b_dashboard": {
+  "duration": 11.17,
+  "sentences": [
+   {
+    "text": "On the college dashboard, every programme has a seat strip.",
+    "start": 0.0,
+    "end": 2.598
+   },
+   {
+    "text": "Each square is one approved seat, filled from real student records.",
+    "start": 2.758,
+    "end": 5.928
+   },
+   {
+    "text": "Seats over intake show up in red, so a college sees its position before AICTE does.",
+    "start": 6.088,
+    "end": 11.17
+   }
+  ]
+ },
+ "k07b_flags": {
+  "duration": 11.49,
+  "sentences": [
+   {
+    "text": "Anything a rule finds becomes a flag with its evidence.",
+    "start": 0.0,
+    "end": 2.982
+   },
+   {
+    "text": "AICTE asks for clarification, the college responds, and every step stays in the history.",
+    "start": 3.142,
+    "end": 8.897
+   },
+   {
+    "text": "A flag is a question, never an accusation.",
+    "start": 9.057,
+    "end": 11.49
+   }
+  ]
  }
 }
