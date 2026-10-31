@@ -1,0 +1,323 @@
+1
+00:00:01,950 --> 00:00:04,941
+Every year, lakhs of students join AICTE-approved
+
+2
+00:00:04,941 --> 00:00:06,741
+institutions.
+
+3
+00:00:06,741 --> 00:00:08,541
+Behind each admission is a record that
+
+4
+00:00:08,541 --> 00:00:10,341
+should be accurate,
+
+5
+00:00:10,341 --> 00:00:12,141
+verifiable, and fair to every student.
+
+6
+00:00:12,141 --> 00:00:13,941
+This is the APAAR Student Register.
+
+7
+00:00:20,950 --> 00:00:22,877
+Today, oversight mostly sees totals.
+
+8
+00:00:22,877 --> 00:00:25,178
+An institution reports how many students it
+
+9
+00:00:25,178 --> 00:00:26,978
+admitted, not who they are.
+
+10
+00:00:26,978 --> 00:00:28,978
+Excess admissions hide inside those numbers.
+
+11
+00:00:28,978 --> 00:00:30,798
+The same student can appear at two
+
+12
+00:00:30,798 --> 00:00:32,598
+colleges at once.
+
+13
+00:00:32,598 --> 00:00:34,398
+And when an employer asks if a
+
+14
+00:00:34,398 --> 00:00:36,198
+degree is real,
+
+15
+00:00:36,198 --> 00:00:37,998
+the answer is a letter and a
+
+16
+00:00:37,998 --> 00:00:39,798
+long wait.
+
+17
+00:00:50,950 --> 00:00:53,248
+So we built one register of student-level
+
+18
+00:00:53,248 --> 00:00:55,153
+enrolments, keyed to the APAAR ID.
+
+19
+00:00:55,153 --> 00:00:57,227
+Every record is checked the same way,
+
+20
+00:00:57,227 --> 00:00:59,188
+and every seat is counted from real
+
+21
+00:00:59,188 --> 00:01:01,150
+records, not from a declared total.
+
+22
+00:01:10,950 --> 00:01:13,065
+AICTE opens the national register.
+
+23
+00:01:13,065 --> 00:01:15,864
+Every figure here is computed from individual
+
+24
+00:01:15,864 --> 00:01:17,664
+records.
+
+25
+00:01:17,664 --> 00:01:19,968
+Narmada's MBA programme shows sixty-eight students against
+
+26
+00:01:19,968 --> 00:01:21,768
+an approved intake of sixty.
+
+27
+00:01:25,950 --> 00:01:29,011
+Institutions upload their admissions as a spreadsheet.
+
+28
+00:01:29,011 --> 00:01:31,506
+Twenty-six validation rules check every row.
+
+29
+00:01:31,506 --> 00:01:33,717
+A mistyped APAAR ID gets a did-you-mean
+
+30
+00:01:33,717 --> 00:01:35,701
+suggestion from the registry check,
+
+31
+00:01:35,701 --> 00:01:37,798
+which is simulated in this prototype.
+
+32
+00:01:37,798 --> 00:01:39,598
+Staff fix the flagged rows,
+
+33
+00:01:39,598 --> 00:01:41,398
+and a row with an error is
+
+34
+00:01:41,398 --> 00:01:43,198
+never committed.
+
+35
+00:01:48,950 --> 00:01:50,750
+Before admitting a student,
+
+36
+00:01:50,750 --> 00:01:52,550
+the admission desk can run a seat
+
+37
+00:01:52,550 --> 00:01:54,350
+check, and see whether one more admission
+
+38
+00:01:54,350 --> 00:01:56,150
+would cross the approved intake.
+
+39
+00:02:00,950 --> 00:02:02,750
+When a student is already active at
+
+40
+00:02:02,750 --> 00:02:05,105
+another institution, the register raises a flag
+
+41
+00:02:05,105 --> 00:02:06,905
+for review.
+
+42
+00:02:06,905 --> 00:02:08,705
+The other institution's identity stays withheld,
+
+43
+00:02:08,705 --> 00:02:10,629
+and name matching that understands Indian spelling
+
+44
+00:02:10,629 --> 00:02:13,721
+variations finds possible duplicates without merging anything
+
+45
+00:02:13,721 --> 00:02:15,521
+automatically.
+
+46
+00:02:17,950 --> 00:02:20,399
+Institutions issue signed enrolment records.
+
+47
+00:02:20,399 --> 00:02:22,737
+A student chooses exactly which details to
+
+48
+00:02:22,737 --> 00:02:24,537
+share.
+
+49
+00:02:24,537 --> 00:02:26,337
+An employer pastes the token and six
+
+50
+00:02:26,337 --> 00:02:28,137
+checks run in order,
+
+51
+00:02:28,137 --> 00:02:29,937
+from the signature to revocation.
+
+52
+00:02:29,937 --> 00:02:31,737
+Change a single value,
+
+53
+00:02:31,737 --> 00:02:33,537
+and verification fails.
+
+54
+00:02:33,537 --> 00:02:35,337
+Consent-based requests work the same way,
+
+55
+00:02:35,337 --> 00:02:37,137
+and only with the student's approval.
+
+56
+00:02:43,950 --> 00:02:46,012
+Students under eighteen are protected.
+
+57
+00:02:46,012 --> 00:02:47,965
+Their records stay on hold until the
+
+58
+00:02:47,965 --> 00:02:50,190
+institution records a guardian's consent.
+
+59
+00:02:54,950 --> 00:02:57,315
+Every action lands in a hash-chained audit
+
+60
+00:02:57,315 --> 00:02:59,173
+trail that an auditor can verify.
+
+61
+00:02:59,173 --> 00:03:01,425
+And a public status page states honestly
+
+62
+00:03:01,425 --> 00:03:03,225
+what is built,
+
+63
+00:03:03,225 --> 00:03:05,025
+what is simulated,
+
+64
+00:03:05,025 --> 00:03:06,825
+and what still needs official access.
+
+65
+00:03:10,950 --> 00:03:12,750
+Under the hood,
+
+66
+00:03:12,750 --> 00:03:14,550
+a React interface talks to a FastAPI
+
+67
+00:03:14,550 --> 00:03:16,350
+service.
+
+68
+00:03:16,350 --> 00:03:18,150
+One validation engine is the only writer
+
+69
+00:03:18,150 --> 00:03:19,950
+of student records.
+
+70
+00:03:19,950 --> 00:03:21,750
+It feeds the seat ledger,
+
+71
+00:03:21,750 --> 00:03:23,550
+identity matching and signed credentials,
+
+72
+00:03:23,550 --> 00:03:25,350
+with every step recorded in the audit
+
+73
+00:03:25,350 --> 00:03:27,150
+chain, on PostgreSQL.
+
+74
+00:03:27,150 --> 00:03:28,950
+The APAAR registry connection is simulated until
+
+75
+00:03:28,950 --> 00:03:30,750
+official access is granted.
+
+76
+00:03:40,950 --> 00:03:42,750
+APAAR Student Register.
+
+77
+00:03:42,750 --> 00:03:44,550
+Every seat counted,
+
+78
+00:03:44,550 --> 00:03:46,350
+every student verifiable.
+
+79
+00:03:46,350 --> 00:03:48,150
+Built for Smart India Hackathon,
+
+80
+00:03:48,150 --> 00:03:49,950
+problem statement S-I-H two six two six
+
+81
+00:03:49,950 --> 00:03:51,750
+three.

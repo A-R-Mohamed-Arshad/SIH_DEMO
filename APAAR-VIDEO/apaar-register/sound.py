@@ -197,7 +197,9 @@ mixR = music[:, 1] * duck_m * .55 + fol[:, 1] * duck_f * .9 + voice[:, 1] * 1.0
 mix = np.stack([mixL, mixR], 1)
 # gentle master: fade in/out, limit
 fi = np.minimum(1, np.arange(NS) / (.4 * SR)); fo = np.minimum(1, (NS - np.arange(NS)) / (1.2 * SR)); mix *= (fi * fo)[:, None]
-mix = np.stack([limit(mix[:, 0], .85), limit(mix[:, 1], .85)], 1).astype(np.float32)
+mix = np.stack([compress(mix[:, 0], thr=.18, ratio=3.2), compress(mix[:, 1], thr=.18, ratio=3.2)], 1)
+mix = mix * 1.7
+mix = np.stack([limit(mix[:, 0], .84), limit(mix[:, 1], .84)], 1).astype(np.float32)
 os.makedirs(os.path.join(HERE, 'out'), exist_ok=True)
 sf.write(os.path.join(HERE, 'out', 'mix.wav'), mix, SR, subtype='PCM_24')
 print('mix.wav', round(len(mix) / SR, 1), 's  peak', round(float(np.abs(mix).max()), 2))
