@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 219.882,
+ "total": 235.995,
  "segments": [
   {
    "id": "k00_meet",
@@ -9,11 +9,27 @@
    "points": [],
    "role": "",
    "start": 0.0,
-   "dur": 9.877,
-   "voice": null,
-   "voiceStart": 0.4,
+   "dur": 13.191,
+   "voice": "tour/k00_meet.wav",
+   "voiceStart": 0.5,
    "text": "Meet Ananya. This year she joined an engineering college, one of lakhs of students admitted to AICTE-approved institutions. But today, oversight sees only totals.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Meet Ananya.",
+     "t0": 0.5,
+     "t1": 1.473
+    },
+    {
+     "text": "This year she joined an engineering college, one of lakhs of students admitted to AICTE-approved institutions.",
+     "t0": 1.633,
+     "t1": 7.312
+    },
+    {
+     "text": "But today, oversight sees only totals.",
+     "t0": 7.472,
+     "t1": 9.891
+    }
+   ]
   },
   {
    "id": "k01_problem",
@@ -21,12 +37,33 @@
    "title": "Totals hide students",
    "points": [],
    "role": "",
-   "start": 9.877,
-   "dur": 17.514,
-   "voice": null,
-   "voiceStart": 10.277,
+   "start": 13.191,
+   "dur": 17.682,
+   "voice": "tour/k01_problem.wav",
+   "voiceStart": 13.691,
    "text": "A college reports how many it admitted, not who. Excess admissions hide inside those numbers. The same student can be enrolled at two colleges at once. And when an employer asks if Ananya's degree is real, the answer is a letter and a long wait.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "A college reports how many it admitted, not who.",
+     "t0": 13.691,
+     "t1": 16.183
+    },
+    {
+     "text": "Excess admissions hide inside those numbers.",
+     "t0": 16.343,
+     "t1": 18.783
+    },
+    {
+     "text": "The same student can be enrolled at two colleges at once.",
+     "t0": 18.943,
+     "t1": 21.629
+    },
+    {
+     "text": "And when an employer asks if Ananya's degree is real, the answer is a letter and a long wait.",
+     "t0": 21.789,
+     "t1": 26.573
+    }
+   ]
   },
   {
    "id": "k02_idea",
@@ -34,12 +71,23 @@
    "title": "One register of students",
    "points": [],
    "role": "",
-   "start": 27.391,
-   "dur": 10.605,
-   "voice": null,
-   "voiceStart": 27.791,
-   "text": "The APAAR Student Register changes that. Every enrolment is an individual record, keyed to the student's APAAR ID, and every number is counted from those records.",
-   "sentences": []
+   "start": 30.873,
+   "dur": 12.006,
+   "voice": "tour/k02_idea.wav",
+   "voiceStart": 31.373,
+   "text": "The APAAR Student Register changes that. Every enrolment is an individual record, linked to the student's APAAR ID, and every number is counted from those records.",
+   "sentences": [
+    {
+     "text": "The APAAR Student Register changes that.",
+     "t0": 31.373,
+     "t1": 33.571
+    },
+    {
+     "text": "Every enrolment is an individual record, linked to the student's APAAR ID, and every number is counted from those records.",
+     "t0": 33.731,
+     "t1": 40.079
+    }
+   ]
   },
   {
    "id": "k03_upload",
@@ -51,12 +99,23 @@
     "Nothing saved until checked"
    ],
    "role": "Institution",
-   "start": 37.995,
-   "dur": 9.15,
-   "voice": null,
-   "voiceStart": 38.395,
+   "start": 42.879,
+   "dur": 11.089,
+   "voice": "tour/k03_upload.wav",
+   "voiceStart": 43.379,
    "text": "Ananya's college, Kaveri Institute, uploads this year's admissions as a spreadsheet. Before anything is saved, twenty-six validation rules check every single row.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Ananya's college, Kaveri Institute, uploads this year's admissions as a spreadsheet.",
+     "t0": 43.379,
+     "t1": 48.323
+    },
+    {
+     "text": "Before anything is saved, twenty-six validation rules check every single row.",
+     "t0": 48.483,
+     "t1": 52.668
+    }
+   ]
   },
   {
    "id": "k04_fix",
@@ -69,12 +128,33 @@
     "Errors never committed"
    ],
    "role": "Institution",
-   "start": 47.145,
-   "dur": 18.605,
-   "voice": null,
-   "voiceStart": 47.545,
+   "start": 53.968,
+   "dur": 16.871,
+   "voice": "tour/k04_fix.wav",
+   "voiceStart": 54.468,
    "text": "A mistyped APAAR ID gets a did-you-mean suggestion from the registry check, which is simulated in this prototype. Staff fix the flagged rows right on the page. Before committing, the register shows exactly what will happen to every programme's seats. A row with an error is never committed.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "A mistyped APAAR ID gets a did-you-mean suggestion from the registry check, which is simulated in this prototype.",
+     "t0": 54.468,
+     "t1": 60.976
+    },
+    {
+     "text": "Staff fix the flagged rows right on the page.",
+     "t0": 61.136,
+     "t1": 63.517
+    },
+    {
+     "text": "Before committing, the register shows exactly what will happen to every programme's seats.",
+     "t0": 63.677,
+     "t1": 67.725
+    },
+    {
+     "text": "A row with an error is never committed.",
+     "t0": 67.885,
+     "t1": 69.539
+    }
+   ]
   },
   {
    "id": "k05_seat",
@@ -85,12 +165,18 @@
     "Advice, not a penalty"
    ],
    "role": "Institution",
-   "start": 65.75,
-   "dur": 9.15,
-   "voice": null,
-   "voiceStart": 66.15,
+   "start": 70.839,
+   "dur": 7.512,
+   "voice": "tour/k05_seat.wav",
+   "voiceStart": 71.339,
    "text": "And before admitting one more student, the admission desk runs a seat check, to see if it would cross the approved intake.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "And before admitting one more student, the admission desk runs a seat check, to see if it would cross the approved intake.",
+     "t0": 71.339,
+     "t1": 77.051
+    }
+   ]
   },
   {
    "id": "k05b_dashboard",
@@ -102,12 +188,28 @@
     "Figures from records, live"
    ],
    "role": "Institution",
-   "start": 74.9,
-   "dur": 14.605,
-   "voice": null,
-   "voiceStart": 75.3,
+   "start": 78.351,
+   "dur": 12.97,
+   "voice": "tour/k05b_dashboard.wav",
+   "voiceStart": 78.851,
    "text": "On the college dashboard, every programme has a seat strip. Each square is one approved seat, filled from real student records. Seats over intake show up in red, so a college sees its position before AICTE does.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "On the college dashboard, every programme has a seat strip.",
+     "t0": 78.851,
+     "t1": 81.449
+    },
+    {
+     "text": "Each square is one approved seat, filled from real student records.",
+     "t0": 81.609,
+     "t1": 84.779
+    },
+    {
+     "text": "Seats over intake show up in red, so a college sees its position before AICTE does.",
+     "t0": 84.939,
+     "t1": 90.021
+    }
+   ]
   },
   {
    "id": "k06_national",
@@ -119,12 +221,33 @@
     "Narmada MBA: 68 against 60"
    ],
    "role": "AICTE",
-   "start": 89.505,
-   "dur": 12.423,
-   "voice": null,
-   "voiceStart": 89.905,
+   "start": 91.321,
+   "dur": 15.047,
+   "voice": "tour/k06_national.wav",
+   "voiceStart": 91.821,
    "text": "At AICTE, the national register updates live. Every figure is computed from individual records. And the excess cannot hide: Narmada's MBA programme shows sixty-eight students against an approved intake of sixty.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "At AICTE, the national register updates live.",
+     "t0": 91.821,
+     "t1": 95.175
+    },
+    {
+     "text": "Every figure is computed from individual records.",
+     "t0": 95.335,
+     "t1": 97.949
+    },
+    {
+     "text": "And the excess cannot hide:",
+     "t0": 98.109,
+     "t1": 100.001
+    },
+    {
+     "text": "Narmada's MBA programme shows sixty-eight students against an approved intake of sixty.",
+     "t0": 100.161,
+     "t1": 105.068
+    }
+   ]
   },
   {
    "id": "k07_priority",
@@ -135,12 +258,23 @@
     "A reason to review, not a verdict"
    ],
    "role": "AICTE",
-   "start": 101.927,
-   "dur": 11.332,
-   "voice": null,
-   "voiceStart": 102.327,
+   "start": 106.368,
+   "dur": 11.213,
+   "voice": "tour/k07_priority.wav",
+   "voiceStart": 106.868,
    "text": "Review priority ranks institutions by transparent reasons, such as seats over intake and conflicts with other colleges. A high rank is a reason to review, never a verdict.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Review priority ranks institutions by transparent reasons, such as seats over intake and conflicts with other colleges.",
+     "t0": 106.868,
+     "t1": 113.232
+    },
+    {
+     "text": "A high rank is a reason to review, never a verdict.",
+     "t0": 113.392,
+     "t1": 116.281
+    }
+   ]
   },
   {
    "id": "k07b_flags",
@@ -152,12 +286,28 @@
     "Full history kept"
    ],
    "role": "AICTE",
-   "start": 113.259,
-   "dur": 12.786,
-   "voice": null,
-   "voiceStart": 113.659,
+   "start": 117.581,
+   "dur": 13.29,
+   "voice": "tour/k07b_flags.wav",
+   "voiceStart": 118.081,
    "text": "Anything a rule finds becomes a flag with its evidence. AICTE asks for clarification, the college responds, and every step stays in the history. A flag is a question, never an accusation.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Anything a rule finds becomes a flag with its evidence.",
+     "t0": 118.081,
+     "t1": 121.063
+    },
+    {
+     "text": "AICTE asks for clarification, the college responds, and every step stays in the history.",
+     "t0": 121.223,
+     "t1": 126.978
+    },
+    {
+     "text": "A flag is a question, never an accusation.",
+     "t0": 127.138,
+     "t1": 129.571
+    }
+   ]
   },
   {
    "id": "k08_duplicate",
@@ -170,12 +320,33 @@
     "A person decides; never auto-merged"
    ],
    "role": "AICTE",
-   "start": 126.045,
-   "dur": 15.695,
-   "voice": null,
-   "voiceStart": 126.445,
+   "start": 130.871,
+   "dur": 15.786,
+   "voice": "tour/k08_duplicate.wav",
+   "voiceStart": 131.371,
    "text": "When a student is active at two colleges, the register raises a flag. The other college's identity stays withheld. Name matching that understands Indian spellings shows exactly why two records may match, and a person decides. Nothing is merged automatically.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "When a student is active at two colleges, the register raises a flag.",
+     "t0": 131.371,
+     "t1": 135.019
+    },
+    {
+     "text": "The other college's identity stays withheld.",
+     "t0": 135.179,
+     "t1": 137.241
+    },
+    {
+     "text": "Name matching that understands Indian spellings shows exactly why two records may match, and a person decides.",
+     "t0": 137.401,
+     "t1": 143.5
+    },
+    {
+     "text": "Nothing is merged automatically.",
+     "t0": 143.66,
+     "t1": 145.357
+    }
+   ]
   },
   {
    "id": "k09_share",
@@ -187,12 +358,28 @@
     "Token and QR code"
    ],
    "role": "Student",
-   "start": 141.741,
-   "dur": 10.968,
-   "voice": null,
-   "voiceStart": 142.141,
+   "start": 146.657,
+   "dur": 10.629,
+   "voice": "tour/k09_share.wav",
+   "voiceStart": 147.157,
    "text": "Now Ananya. Her college issues a signed enrolment record. She decides exactly which details to share, and the register gives her a token and a QR code.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Now Ananya.",
+     "t0": 147.157,
+     "t1": 148.14
+    },
+    {
+     "text": "Her college issues a signed enrolment record.",
+     "t0": 148.3,
+     "t1": 150.436
+    },
+    {
+     "text": "She decides exactly which details to share, and the register gives her a token and a QR code.",
+     "t0": 150.596,
+     "t1": 155.986
+    }
+   ]
   },
   {
    "id": "k10_verify",
@@ -204,12 +391,28 @@
     "One changed value fails"
    ],
    "role": "Employer",
-   "start": 152.709,
-   "dur": 12.059,
-   "voice": null,
-   "voiceStart": 153.109,
+   "start": 157.286,
+   "dur": 11.571,
+   "voice": "tour/k10_verify.wav",
+   "voiceStart": 157.786,
    "text": "An employer pastes the token. Six checks run in order, from the signature to revocation, and only the details Ananya chose are shown. Change a single value, and verification fails.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "An employer pastes the token.",
+     "t0": 157.786,
+     "t1": 159.296
+    },
+    {
+     "text": "Six checks run in order, from the signature to revocation, and only the details Ananya chose are shown.",
+     "t0": 159.456,
+     "t1": 164.681
+    },
+    {
+     "text": "Change a single value, and verification fails.",
+     "t0": 164.841,
+     "t1": 167.557
+    }
+   ]
   },
   {
    "id": "k11_consent",
@@ -221,12 +424,28 @@
     "Result only after consent"
    ],
    "role": "Employer",
-   "start": 164.768,
-   "dur": 10.605,
-   "voice": null,
-   "voiceStart": 165.168,
+   "start": 168.857,
+   "dur": 10.054,
+   "voice": "tour/k11_consent.wav",
+   "voiceStart": 169.357,
    "text": "Employers can also send a request. Ananya sees it, sees exactly what would be shared, and allows it. Only then does the employer get an answer.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Employers can also send a request.",
+     "t0": 169.357,
+     "t1": 171.368
+    },
+    {
+     "text": "Ananya sees it, sees exactly what would be shared, and allows it.",
+     "t0": 171.528,
+     "t1": 174.924
+    },
+    {
+     "text": "Only then does the employer get an answer.",
+     "t0": 175.084,
+     "t1": 177.611
+    }
+   ]
   },
   {
    "id": "k12_minor",
@@ -237,12 +456,23 @@
     "Held until guardian consent"
    ],
    "role": "Student",
-   "start": 175.373,
-   "dur": 7.332,
-   "voice": null,
-   "voiceStart": 175.773,
+   "start": 178.911,
+   "dur": 7.017,
+   "voice": "tour/k12_minor.wav",
+   "voiceStart": 179.411,
    "text": "Students under eighteen are protected. Their records cannot be shared until the college records a guardian's consent.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Students under eighteen are protected.",
+     "t0": 179.411,
+     "t1": 181.245
+    },
+    {
+     "text": "Their records cannot be shared until the college records a guardian's consent.",
+     "t0": 181.405,
+     "t1": 184.628
+    }
+   ]
   },
   {
    "id": "k13_audit",
@@ -254,12 +484,23 @@
     "Public status: built, simulated, pending"
    ],
    "role": "Audit",
-   "start": 182.705,
-   "dur": 13.514,
-   "voice": null,
-   "voiceStart": 183.105,
+   "start": 185.928,
+   "dur": 12.526,
+   "voice": "tour/k13_audit.wav",
+   "voiceStart": 186.428,
    "text": "Every action lands in a hash-chained audit trail that an auditor verifies with one click. And a public status page states honestly what is built, what is simulated, and what still needs official access.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Every action lands in a hash-chained audit trail that an auditor verifies with one click.",
+     "t0": 186.428,
+     "t1": 191.016
+    },
+    {
+     "text": "And a public status page states honestly what is built, what is simulated, and what still needs official access.",
+     "t0": 191.176,
+     "t1": 197.154
+    }
+   ]
   },
   {
    "id": "k14_why",
@@ -267,12 +508,38 @@
    "title": "From totals to students",
    "points": [],
    "role": "",
-   "start": 196.218,
-   "dur": 13.514,
-   "voice": null,
-   "voiceStart": 196.618,
+   "start": 198.454,
+   "dur": 18.297,
+   "voice": "tour/k14_why.wav",
+   "voiceStart": 198.954,
    "text": "Seats counted from records, not declared totals. Duplicates caught early, with identities protected. Students in control of what they share. Employers verifying in seconds, not weeks. And a history no one can quietly rewrite.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "Seats counted from records, not declared totals.",
+     "t0": 198.954,
+     "t1": 201.613
+    },
+    {
+     "text": "Duplicates caught early, with identities protected.",
+     "t0": 201.773,
+     "t1": 204.084
+    },
+    {
+     "text": "Students in control of what they share.",
+     "t0": 204.244,
+     "t1": 206.126
+    },
+    {
+     "text": "Employers verifying in seconds, not weeks.",
+     "t0": 206.286,
+     "t1": 208.965
+    },
+    {
+     "text": "And a history no one can quietly rewrite.",
+     "t0": 209.125,
+     "t1": 211.451
+    }
+   ]
   },
   {
    "id": "k15_close",
@@ -280,12 +547,33 @@
    "title": "APAAR Student Register",
    "points": [],
    "role": "",
-   "start": 209.732,
-   "dur": 9.15,
-   "voice": null,
-   "voiceStart": 210.132,
+   "start": 216.751,
+   "dur": 18.244,
+   "voice": "tour/k15_close.wav",
+   "voiceStart": 217.251,
    "text": "APAAR Student Register. Every seat counted. Every student verifiable. Built for Smart India Hackathon, problem statement S-I-H two six two six three.",
-   "sentences": []
+   "sentences": [
+    {
+     "text": "APAAR Student Register.",
+     "t0": 217.251,
+     "t1": 219.067
+    },
+    {
+     "text": "Every seat counted.",
+     "t0": 219.227,
+     "t1": 220.363
+    },
+    {
+     "text": "Every student verifiable.",
+     "t0": 220.523,
+     "t1": 221.816
+    },
+    {
+     "text": "Built for Smart India Hackathon, problem statement S-I-H two six two six three.",
+     "t0": 221.976,
+     "t1": 227.695
+    }
+   ]
   }
  ],
  "items": [
@@ -335,14 +623,14 @@
    "kind": "scene",
    "name": "S1Open",
    "start": 2.065,
-   "dur": 4.445,
+   "dur": 4.5,
    "seg": "k00_meet"
   },
   {
    "kind": "clip",
    "name": "n_student_correction.mp4",
-   "start": 6.51,
-   "dur": 3.368,
+   "start": 6.565,
+   "dur": 6.626,
    "from": 1.985,
    "rate": 0.02,
    "keys": [
@@ -371,10 +659,34 @@
      "cy": 803
     },
     {
-     "t": 3.368,
+     "t": 4.0,
      "zoom": 1.508,
      "cx": 744,
      "cy": 803
+    },
+    {
+     "t": 4.6,
+     "zoom": 1.45,
+     "cx": 1816,
+     "cy": 803
+    },
+    {
+     "t": 6.0,
+     "zoom": 1.508,
+     "cx": 1816,
+     "cy": 803
+    },
+    {
+     "t": 6.6,
+     "zoom": 1.45,
+     "cx": 404,
+     "cy": 924
+    },
+    {
+     "t": 6.626,
+     "zoom": 1.508,
+     "cx": 404,
+     "cy": 924
     }
    ],
    "url": "apaar-student-register.vercel.app/#/me",
@@ -384,38 +696,38 @@
   {
    "kind": "scene",
    "name": "HiddenExcess",
-   "start": 9.877,
-   "dur": 5.838,
+   "start": 13.191,
+   "dur": 5.894,
    "seg": "k01_problem"
   },
   {
    "kind": "scene",
    "name": "CountedTwice",
-   "start": 15.715,
-   "dur": 5.838,
+   "start": 19.085,
+   "dur": 5.894,
    "seg": "k01_problem"
   },
   {
    "kind": "scene",
    "name": "LetterAndWait",
-   "start": 21.553,
-   "dur": 5.838,
+   "start": 24.979,
+   "dur": 5.894,
    "seg": "k01_problem"
   },
   {
    "kind": "scene",
    "name": "OneRegister",
-   "start": 27.391,
+   "start": 30.873,
    "dur": 4.5,
    "seg": "k02_idea"
   },
   {
    "kind": "clip",
    "name": "s03_dashboard.mp4",
-   "start": 31.891,
-   "dur": 6.105,
+   "start": 35.373,
+   "dur": 7.243,
    "from": 0.0,
-   "rate": 1.1865,
+   "rate": 1.0,
    "keys": [
     {
      "t": 0,
@@ -430,55 +742,55 @@
      "cy": 720
     },
     {
-     "t": 0.1,
+     "t": 0.143,
      "zoom": 1.28,
      "cx": 742.0,
      "cy": 1007.0
     },
     {
-     "t": 1.977,
+     "t": 2.485,
      "zoom": 1.28,
      "cx": 742.0,
      "cy": 1007.0
     },
     {
-     "t": 1.977,
+     "t": 2.485,
      "zoom": 1.28,
      "cx": 742.0,
      "cy": 1007.0
     },
     {
-     "t": 2.427,
+     "t": 2.935,
      "zoom": 1.28,
      "cx": 742.0,
      "cy": 1034.5
     },
     {
-     "t": 4.259,
+     "t": 5.193,
      "zoom": 1.28,
      "cx": 742.0,
      "cy": 1034.5
     },
     {
-     "t": 4.259,
+     "t": 5.193,
      "zoom": 1.28,
      "cx": 742.0,
      "cy": 1034.5
     },
     {
-     "t": 4.709,
+     "t": 5.643,
      "zoom": 1.096,
      "cx": 1280.0,
      "cy": 638.0
     },
     {
-     "t": 6.509,
+     "t": 7.443,
      "zoom": 1.096,
      "cx": 1280.0,
      "cy": 638.0
     },
     {
-     "t": 7.009,
+     "t": 7.943,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -489,8 +801,27 @@
   },
   {
    "kind": "clip",
+   "name": "s03_dashboard.mp4",
+   "start": 42.616,
+   "dur": 0.263,
+   "from": 7.163,
+   "rate": 0.02,
+   "keys": [
+    {
+     "t": 0,
+     "zoom": 1.0,
+     "cx": 1280,
+     "cy": 720
+    }
+   ],
+   "url": "apaar-student-register.vercel.app/#/inst",
+   "seg": "k02_idea",
+   "still": true
+  },
+  {
+   "kind": "clip",
    "name": "s04_upload.mp4",
-   "start": 37.995,
+   "start": 42.879,
    "dur": 8.988,
    "from": 0.833,
    "rate": 1.0,
@@ -574,8 +905,8 @@
   {
    "kind": "clip",
    "name": "s04_upload.mp4",
-   "start": 46.983,
-   "dur": 0.162,
+   "start": 51.867,
+   "dur": 2.101,
    "from": 9.741,
    "rate": 0.02,
    "keys": [
@@ -584,6 +915,18 @@
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
+    },
+    {
+     "t": 0.6,
+     "zoom": 1.45,
+     "cx": 311,
+     "cy": 274
+    },
+    {
+     "t": 2.0,
+     "zoom": 1.508,
+     "cx": 311,
+     "cy": 274
     }
    ],
    "url": "apaar-student-register.vercel.app/#/inst/upload",
@@ -593,10 +936,10 @@
   {
    "kind": "clip",
    "name": "s05_fix.mp4",
-   "start": 47.145,
-   "dur": 6.266,
+   "start": 53.968,
+   "dur": 5.682,
    "from": 1.593,
-   "rate": 1.3121,
+   "rate": 1.4469,
    "keys": [
     {
      "t": 0,
@@ -617,37 +960,37 @@
      "cy": 720
     },
     {
-     "t": 1.283,
+     "t": 1.234,
      "zoom": 1.65,
      "cx": 440,
      "cy": 720
     },
     {
-     "t": 1.783,
+     "t": 1.734,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 3.671,
+     "t": 3.236,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 4.121,
+     "t": 3.686,
      "zoom": 1.65,
      "cx": 1866,
      "cy": 1244
     },
     {
-     "t": 5.421,
+     "t": 4.986,
      "zoom": 1.65,
      "cx": 1866,
      "cy": 1244
     },
     {
-     "t": 5.921,
+     "t": 5.486,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -659,10 +1002,10 @@
   {
    "kind": "clip",
    "name": "s05_fix.mp4",
-   "start": 53.412,
-   "dur": 5.023,
+   "start": 59.65,
+   "dur": 4.555,
    "from": 53.677,
-   "rate": 1.3121,
+   "rate": 1.4469,
    "keys": [
     {
      "t": 0,
@@ -683,49 +1026,49 @@
      "cy": 427
     },
     {
-     "t": 1.447,
+     "t": 1.219,
      "zoom": 1.65,
      "cx": 280,
      "cy": 427
     },
     {
-     "t": 1.447,
+     "t": 1.219,
      "zoom": 1.65,
      "cx": 280,
      "cy": 427
     },
     {
-     "t": 1.897,
+     "t": 1.669,
      "zoom": 1.65,
      "cx": 2279,
      "cy": 720
     },
     {
-     "t": 3.282,
+     "t": 2.969,
      "zoom": 1.65,
      "cx": 2279,
      "cy": 720
     },
     {
-     "t": 3.282,
+     "t": 2.969,
      "zoom": 1.65,
      "cx": 2279,
      "cy": 720
     },
     {
-     "t": 3.732,
+     "t": 3.357,
      "zoom": 1.096,
      "cx": 1280.0,
      "cy": 639.0
     },
     {
-     "t": 5.532,
+     "t": 5.157,
      "zoom": 1.096,
      "cx": 1280.0,
      "cy": 639.0
     },
     {
-     "t": 6.032,
+     "t": 5.657,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -737,10 +1080,10 @@
   {
    "kind": "clip",
    "name": "s06_commit_inst.mp4",
-   "start": 58.435,
-   "dur": 7.315,
+   "start": 64.206,
+   "dur": 6.633,
    "from": 0.168,
-   "rate": 1.3121,
+   "rate": 1.4469,
    "keys": [
     {
      "t": 0,
@@ -749,49 +1092,43 @@
      "cy": 720
     },
     {
-     "t": 2.479,
+     "t": 2.155,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 2.929,
+     "t": 2.605,
      "zoom": 1.65,
      "cx": 2244,
      "cy": 481
     },
     {
-     "t": 4.229,
+     "t": 4.342,
      "zoom": 1.65,
      "cx": 2244,
      "cy": 481
     },
     {
-     "t": 4.729,
-     "zoom": 1.0,
-     "cx": 1280,
-     "cy": 720
+     "t": 4.342,
+     "zoom": 1.65,
+     "cx": 2244,
+     "cy": 481
     },
     {
-     "t": 4.891,
-     "zoom": 1.0,
-     "cx": 1280,
-     "cy": 720
-    },
-    {
-     "t": 5.341,
+     "t": 4.792,
      "zoom": 1.65,
      "cx": 1568,
      "cy": 822
     },
     {
-     "t": 6.641,
+     "t": 6.092,
      "zoom": 1.65,
      "cx": 1568,
      "cy": 822
     },
     {
-     "t": 7.141,
+     "t": 6.592,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -803,7 +1140,7 @@
   {
    "kind": "clip",
    "name": "s07_seatcheck.mp4",
-   "start": 65.75,
+   "start": 70.839,
    "dur": 5.966,
    "from": 0.668,
    "rate": 1.0,
@@ -881,8 +1218,8 @@
   {
    "kind": "clip",
    "name": "s07_seatcheck.mp4",
-   "start": 71.716,
-   "dur": 3.184,
+   "start": 76.805,
+   "dur": 1.546,
    "from": 6.554,
    "rate": 0.02,
    "keys": [
@@ -899,22 +1236,10 @@
      "cy": 274
     },
     {
-     "t": 2.0,
+     "t": 1.546,
      "zoom": 1.508,
      "cx": 1346,
      "cy": 274
-    },
-    {
-     "t": 2.6,
-     "zoom": 1.45,
-     "cx": 1094,
-     "cy": 605
-    },
-    {
-     "t": 3.184,
-     "zoom": 1.508,
-     "cx": 1094,
-     "cy": 605
     }
    ],
    "url": "apaar-student-register.vercel.app/#/seat-check",
@@ -924,7 +1249,7 @@
   {
    "kind": "clip",
    "name": "n_dash.mp4",
-   "start": 74.9,
+   "start": 78.351,
    "dur": 11.359,
    "from": 0.0,
    "rate": 1.0,
@@ -1026,8 +1351,8 @@
   {
    "kind": "clip",
    "name": "n_dash.mp4",
-   "start": 86.259,
-   "dur": 3.246,
+   "start": 89.71,
+   "dur": 1.611,
    "from": 11.279,
    "rate": 0.02,
    "keys": [
@@ -1044,22 +1369,10 @@
      "cy": 638.0
     },
     {
-     "t": 2.0,
+     "t": 1.611,
      "zoom": 1.165,
      "cx": 1280.0,
      "cy": 638.0
-    },
-    {
-     "t": 2.6,
-     "zoom": 1.5,
-     "cx": 742.0,
-     "cy": 1005.0
-    },
-    {
-     "t": 3.246,
-     "zoom": 1.56,
-     "cx": 742.0,
-     "cy": 1005.0
     }
    ],
    "url": "apaar-student-register.vercel.app/#/inst",
@@ -1069,7 +1382,7 @@
   {
    "kind": "clip",
    "name": "s06_commit_aicte.mp4",
-   "start": 89.505,
+   "start": 91.321,
    "dur": 2.882,
    "from": 6.683,
    "rate": 1.0,
@@ -1111,7 +1424,7 @@
   {
    "kind": "clip",
    "name": "s01_national.mp4",
-   "start": 92.387,
+   "start": 94.203,
    "dur": 7.102,
    "from": 0.0,
    "rate": 1.0,
@@ -1171,8 +1484,8 @@
   {
    "kind": "clip",
    "name": "s01_national.mp4",
-   "start": 99.489,
-   "dur": 2.439,
+   "start": 101.305,
+   "dur": 5.063,
    "from": 7.022,
    "rate": 0.02,
    "keys": [
@@ -1201,10 +1514,22 @@
      "cy": 1092.5
     },
     {
-     "t": 2.439,
+     "t": 4.0,
      "zoom": 1.56,
      "cx": 742.0,
      "cy": 1092.5
+    },
+    {
+     "t": 4.6,
+     "zoom": 1.45,
+     "cx": 491,
+     "cy": 793
+    },
+    {
+     "t": 5.063,
+     "zoom": 1.508,
+     "cx": 491,
+     "cy": 793
     }
    ],
    "url": "apaar-student-register.vercel.app/#/aicte",
@@ -1214,7 +1539,7 @@
   {
    "kind": "clip",
    "name": "s11_priority.mp4",
-   "start": 101.927,
+   "start": 106.368,
    "dur": 6.584,
    "from": 0.839,
    "rate": 1.0,
@@ -1274,8 +1599,8 @@
   {
    "kind": "clip",
    "name": "s11_priority.mp4",
-   "start": 108.511,
-   "dur": 4.748,
+   "start": 112.952,
+   "dur": 4.629,
    "from": 7.343,
    "rate": 0.02,
    "keys": [
@@ -1316,7 +1641,7 @@
      "cy": 164
     },
     {
-     "t": 4.748,
+     "t": 4.629,
      "zoom": 1.508,
      "cx": 1081,
      "cy": 164
@@ -1329,7 +1654,7 @@
   {
    "kind": "clip",
    "name": "s10_workflow_aicte.mp4",
-   "start": 113.259,
+   "start": 117.581,
    "dur": 6.567,
    "from": 1.289,
    "rate": 1.0,
@@ -1395,7 +1720,7 @@
   {
    "kind": "clip",
    "name": "s10_workflow_auto.mp4",
-   "start": 119.826,
+   "start": 124.148,
    "dur": 2.993,
    "from": 0.124,
    "rate": 1.0,
@@ -1437,8 +1762,8 @@
   {
    "kind": "clip",
    "name": "s10_workflow_auto.mp4",
-   "start": 122.819,
-   "dur": 3.226,
+   "start": 127.141,
+   "dur": 3.73,
    "from": 3.037,
    "rate": 0.02,
    "keys": [
@@ -1467,7 +1792,7 @@
      "cy": 1256.0
     },
     {
-     "t": 3.226,
+     "t": 3.73,
      "zoom": 1.165,
      "cx": 1280.0,
      "cy": 1256.0
@@ -1480,7 +1805,7 @@
   {
    "kind": "clip",
    "name": "s09_privacy_inst.mp4",
-   "start": 126.045,
+   "start": 130.871,
    "dur": 4.818,
    "from": 1.73,
    "rate": 1.0,
@@ -1522,7 +1847,7 @@
   {
    "kind": "clip",
    "name": "s11_priority.mp4",
-   "start": 130.863,
+   "start": 135.689,
    "dur": 3.621,
    "from": 7.223,
    "rate": 1.0,
@@ -1564,8 +1889,8 @@
   {
    "kind": "clip",
    "name": "s11_priority.mp4",
-   "start": 134.484,
-   "dur": 7.256,
+   "start": 139.31,
+   "dur": 7.347,
    "from": 10.764,
    "rate": 0.02,
    "keys": [
@@ -1618,7 +1943,7 @@
      "cy": 890.5
     },
     {
-     "t": 7.256,
+     "t": 7.347,
      "zoom": 1.165,
      "cx": 1280.0,
      "cy": 890.5
@@ -1631,10 +1956,10 @@
   {
    "kind": "clip",
    "name": "s12_issue_inst.mp4",
-   "start": 141.741,
-   "dur": 3.275,
+   "start": 146.657,
+   "dur": 3.174,
    "from": 2.908,
-   "rate": 1.1292,
+   "rate": 1.1652,
    "keys": [
     {
      "t": 0,
@@ -1655,31 +1980,31 @@
      "cy": 590
     },
     {
-     "t": 1.104,
+     "t": 1.093,
      "zoom": 1.65,
      "cx": 471,
      "cy": 590
     },
     {
-     "t": 1.104,
+     "t": 1.093,
      "zoom": 1.65,
      "cx": 471,
      "cy": 590
     },
     {
-     "t": 1.204,
+     "t": 1.193,
      "zoom": 1.65,
      "cx": 2182,
      "cy": 731
     },
     {
-     "t": 2.386,
+     "t": 2.335,
      "zoom": 1.65,
      "cx": 2182,
      "cy": 731
     },
     {
-     "t": 2.886,
+     "t": 2.835,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -1691,10 +2016,10 @@
   {
    "kind": "clip",
    "name": "s12_issue_student.mp4",
-   "start": 145.016,
-   "dur": 7.693,
+   "start": 149.831,
+   "dur": 7.455,
    "from": 0.111,
-   "rate": 1.1292,
+   "rate": 1.1652,
    "keys": [
     {
      "t": 0,
@@ -1709,43 +2034,43 @@
      "cy": 720
     },
     {
-     "t": 0.32,
+     "t": 0.301,
      "zoom": 1.096,
      "cx": 1280.0,
      "cy": 1165.0
     },
     {
-     "t": 2.12,
+     "t": 2.101,
      "zoom": 1.096,
      "cx": 1280.0,
      "cy": 1165.0
     },
     {
-     "t": 2.62,
+     "t": 2.601,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 4.944,
+     "t": 4.76,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 5.394,
+     "t": 5.21,
      "zoom": 1.65,
      "cx": 372,
      "cy": 1369
     },
     {
-     "t": 6.694,
+     "t": 6.51,
      "zoom": 1.65,
      "cx": 372,
      "cy": 1369
     },
     {
-     "t": 7.194,
+     "t": 7.01,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -1757,7 +2082,7 @@
   {
    "kind": "clip",
    "name": "s13_verify.mp4",
-   "start": 152.709,
+   "start": 157.286,
    "dur": 10.862,
    "from": 0.598,
    "rate": 1.0,
@@ -1847,8 +2172,8 @@
   {
    "kind": "clip",
    "name": "s13_verify.mp4",
-   "start": 163.571,
-   "dur": 1.197,
+   "start": 168.148,
+   "dur": 0.709,
    "from": 11.38,
    "rate": 0.02,
    "keys": [
@@ -1865,7 +2190,7 @@
      "cy": 1269
     },
     {
-     "t": 1.197,
+     "t": 0.709,
      "zoom": 1.508,
      "cx": 334,
      "cy": 1269
@@ -1878,10 +2203,10 @@
   {
    "kind": "clip",
    "name": "s14_consent_student.mp4",
-   "start": 164.768,
-   "dur": 6.948,
+   "start": 168.857,
+   "dur": 6.588,
    "from": 1.302,
-   "rate": 1.0079,
+   "rate": 1.0631,
    "keys": [
     {
      "t": 0,
@@ -1896,43 +2221,43 @@
      "cy": 720
     },
     {
-     "t": 0.145,
+     "t": 0.108,
      "zoom": 1.65,
      "cx": 2211,
      "cy": 656
     },
     {
-     "t": 1.445,
+     "t": 1.408,
      "zoom": 1.65,
      "cx": 2211,
      "cy": 656
     },
     {
-     "t": 1.945,
+     "t": 1.908,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 4.658,
+     "t": 4.365,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
     },
     {
-     "t": 5.108,
+     "t": 4.815,
      "zoom": 1.65,
      "cx": 1635,
      "cy": 1034
     },
     {
-     "t": 6.408,
+     "t": 6.115,
      "zoom": 1.65,
      "cx": 1635,
      "cy": 1034
     },
     {
-     "t": 6.908,
+     "t": 6.615,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -1944,10 +2269,10 @@
   {
    "kind": "clip",
    "name": "s14_consent_result.mp4",
-   "start": 171.717,
-   "dur": 3.656,
+   "start": 175.445,
+   "dur": 3.466,
    "from": 1.054,
-   "rate": 1.0079,
+   "rate": 1.0631,
    "keys": [
     {
      "t": 0,
@@ -1962,19 +2287,19 @@
      "cy": 720
     },
     {
-     "t": 0.145,
+     "t": 0.108,
      "zoom": 1.65,
      "cx": 2014,
      "cy": 944
     },
     {
-     "t": 1.445,
+     "t": 1.408,
      "zoom": 1.65,
      "cx": 2014,
      "cy": 944
     },
     {
-     "t": 1.945,
+     "t": 1.908,
      "zoom": 1.0,
      "cx": 1280,
      "cy": 720
@@ -1986,7 +2311,7 @@
   {
    "kind": "clip",
    "name": "s16_minor.mp4",
-   "start": 175.373,
+   "start": 178.911,
    "dur": 5.523,
    "from": 0.583,
    "rate": 1.0,
@@ -2064,8 +2389,8 @@
   {
    "kind": "clip",
    "name": "s16_minor.mp4",
-   "start": 180.896,
-   "dur": 1.809,
+   "start": 184.434,
+   "dur": 1.494,
    "from": 6.026,
    "rate": 0.02,
    "keys": [
@@ -2082,7 +2407,7 @@
      "cy": 1378.0
     },
     {
-     "t": 1.809,
+     "t": 1.494,
      "zoom": 1.165,
      "cx": 1280.0,
      "cy": 1378.0
@@ -2095,7 +2420,7 @@
   {
    "kind": "clip",
    "name": "s15_audit.mp4",
-   "start": 182.705,
+   "start": 185.928,
    "dur": 2.677,
    "from": 1.76,
    "rate": 1.0,
@@ -2137,7 +2462,7 @@
   {
    "kind": "clip",
    "name": "s17_status.mp4",
-   "start": 185.382,
+   "start": 188.605,
    "dur": 6.832,
    "from": 0.0,
    "rate": 1.0,
@@ -2179,8 +2504,8 @@
   {
    "kind": "clip",
    "name": "s17_status.mp4",
-   "start": 192.214,
-   "dur": 4.005,
+   "start": 195.437,
+   "dur": 3.017,
    "from": 6.752,
    "rate": 0.02,
    "keys": [
@@ -2209,7 +2534,7 @@
      "cy": 576.0
     },
     {
-     "t": 4.0,
+     "t": 3.017,
      "zoom": 1.165,
      "cx": 1280.0,
      "cy": 576.0
@@ -2222,161 +2547,161 @@
   {
    "kind": "scene",
    "name": "WhyBetter",
-   "start": 196.218,
-   "dur": 13.514,
+   "start": 198.454,
+   "dur": 18.297,
    "seg": "k14_why"
   },
   {
    "kind": "scene",
    "name": "S6Close",
-   "start": 209.732,
-   "dur": 9.15,
+   "start": 216.751,
+   "dur": 18.244,
    "seg": "k15_close"
   }
  ],
  "clicks": [
   [
-   38.695,
+   43.579,
    311,
    274
   ],
   [
-   42.895,
+   47.779,
    0,
    0
   ],
   [
-   44.912,
+   49.796,
    1474,
    978
   ],
   [
-   47.678,
+   54.452,
    440,
    720
   ],
   [
-   51.816,
+   58.204,
    1866,
    1244
   ],
   [
-   53.793,
+   59.996,
    280,
    427
   ],
   [
-   55.859,
+   61.869,
    2279,
    720
   ],
   [
-   61.914,
+   67.361,
    2244,
    481
   ],
   [
-   64.326,
+   69.548,
    1568,
    822
   ],
   [
-   66.45,
+   71.539,
    1346,
    274
   ],
   [
-   68.343,
+   73.432,
    1094,
    605
   ],
   [
-   69.787,
+   74.876,
    1582,
    605
   ],
   [
-   102.627,
+   107.068,
    385,
    41
   ],
   [
-   113.959,
+   118.281,
    1280,
    720
   ],
   [
-   117.898,
+   122.22,
    384,
    860
   ],
   [
-   126.745,
+   131.571,
    458,
    701
   ],
   [
-   131.263,
+   136.089,
    1081,
    164
   ],
   [
-   142.095,
+   147.0,
    471,
    590
   ],
   [
-   143.377,
+   148.242,
    2182,
    731
   ],
   [
-   150.96,
+   155.591,
    372,
    1369
   ],
   [
-   153.409,
+   157.986,
    850,
    890
   ],
   [
-   156.014,
+   160.591,
    334,
    1269
   ],
   [
-   160.315,
+   164.892,
    776,
    1176
   ],
   [
-   165.463,
+   169.515,
    2211,
    656
   ],
   [
-   170.426,
+   174.222,
    1635,
    1034
   ],
   [
-   172.412,
+   176.103,
    2014,
    944
   ],
   [
-   177.05,
+   180.588,
    241,
    1294
   ],
   [
-   178.97,
+   182.508,
    372,
    720
   ],
   [
-   183.405,
+   186.628,
    348,
    510
   ]

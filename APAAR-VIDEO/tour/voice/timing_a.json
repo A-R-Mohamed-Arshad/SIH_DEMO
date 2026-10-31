@@ -45,32 +45,32 @@
   ]
  },
  "k02_idea": {
-  "duration": 8.826,
+  "duration": 8.706,
   "sentences": [
    {
     "text": "The APAAR Student Register changes that.",
     "start": 0.0,
-    "end": 2.207
+    "end": 2.198
    },
    {
-    "text": "Every enrolment is an individual record, keyed to the student's APAAR ID, and every number is counted from those records.",
-    "start": 2.367,
-    "end": 8.826
+    "text": "Every enrolment is an individual record, linked to the student's APAAR ID, and every number is counted from those records.",
+    "start": 2.358,
+    "end": 8.706
    }
   ]
  },
  "k03_upload": {
-  "duration": 8.683,
+  "duration": 9.289,
   "sentences": [
    {
     "text": "Ananya's college, Kaveri Institute, uploads this year's admissions as a spreadsheet.",
     "start": 0.0,
-    "end": 3.899
+    "end": 4.944
    },
    {
     "text": "Before anything is saved, twenty-six validation rules check every single row.",
-    "start": 4.059,
-    "end": 8.683
+    "start": 5.104,
+    "end": 9.289
    }
   ]
  },
@@ -295,27 +295,27 @@
   ]
  },
  "k15_close": {
-  "duration": 10.428,
+  "duration": 10.444,
   "sentences": [
    {
     "text": "APAAR Student Register.",
     "start": 0.0,
-    "end": 1.864
+    "end": 1.816
    },
    {
     "text": "Every seat counted.",
-    "start": 2.024,
-    "end": 3.238
+    "start": 1.976,
+    "end": 3.112
    },
    {
     "text": "Every student verifiable.",
-    "start": 3.398,
-    "end": 4.85
+    "start": 3.272,
+    "end": 4.565
    },
    {
     "text": "Built for Smart India Hackathon, problem statement S-I-H two six two six three.",
-    "start": 5.01,
-    "end": 10.427
+    "start": 4.725,
+    "end": 10.444
    }
   ]
  },

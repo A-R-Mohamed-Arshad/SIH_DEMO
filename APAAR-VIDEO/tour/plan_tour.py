@@ -22,7 +22,8 @@ TIMING = {}
 for _p in sorted((HERE / "voice").glob("timing*.json")):
     TIMING.update(json.loads(_p.read_text()))
 
-LEAD, TAIL = 0.4, 0.75                   # silence before / after each line
+LEAD, TAIL = 0.5, 1.3
+EXTRA = {"k00_meet": 2.0, "k01_problem": 3.0, "k02_idea": 1.5, "k14_why": 4.0, "k15_close": 6.0}                   # silence before / after each line
 MAX_RATE = 2.2                            # footage never plays slower than real time; longer footage is sped up to this
 ZOOM_CLICK, ZOOM_BOX = 1.65, 1.28
 HOST = "apaar-student-register.vercel.app"
@@ -135,7 +136,7 @@ def main():
         vdur = tm["duration"] if tm else len(s["text"].split()) / 2.75
         if not tm:
             missing.append(sid)
-        dur = LEAD + vdur + TAIL
+        dur = LEAD + vdur + TAIL + EXTRA.get(sid, 0.0)
         sents = [{"text": x["text"], "t0": round(t + LEAD + x["start"], 3), "t1": round(t + LEAD + x["end"], 3)} for x in (tm["sentences"] if tm else [])]
         voice = None
         if tm:
