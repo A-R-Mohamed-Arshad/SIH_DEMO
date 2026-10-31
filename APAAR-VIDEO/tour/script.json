@@ -21,7 +21,7 @@
   "title": "One register of students",
   "role": "",
   "points": [],
-  "text": "The APAAR Student Register changes that. Every enrolment is an individual record, keyed to the student's APAAR ID, and every number is counted from those records."
+  "text": "The APAAR Student Register changes that. Every enrolment is an individual record, linked to the student's APAAR ID, and every number is counted from those records."
  },
  {
   "id": "k03_upload",

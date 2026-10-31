@@ -25,7 +25,7 @@ OUT = HERE / "voice"
 SAY = [
     (r"\bAPAAR\b", "Ah-paar"), (r"\bAICTE\b", "A I C T E"), (r"\bS-I-H two six two six three\b", "S I H, two six two six three"),
     (r"\bFastAPI\b", "Fast A P I"), (r"\bPostgreSQL\b", "Postgres Q L"), (r"\bCSV\b", "C S V"), (r"\bAPI\b", "A P I"),
-    (r"\bR015\b", "R zero fifteen"), (r"\bQR\b", "Q R"), (r"\bAISHE\b", "Aishe"), (r"\bMBA\b", "M B A"),
+    (r"\bR015\b", "R zero fifteen"), (r"\bQR\b", "Q R"), (r"\bAISHE\b", "Aishe"), (r"\bMBA\b", "M B A"), (r"\bKaveri\b", "Kaa-vay-ree"), (r"\bproblem statement\b", "problem, statement"),
 ]
 GAP = 0.16          # pause between sentences, seconds
 
@@ -65,7 +65,7 @@ def main():
             continue                                    # resume
         parts, sents, t = [], [], 0.0
         for i, s in enumerate(sentences(seg["text"])):
-            torch.manual_seed(26263 + i)
+            torch.manual_seed(int(os.environ.get("SEED", "26263")) + i)
             w = trim(model.generate(spoken(s), **kw), model.sr)
             d = w.shape[-1] / model.sr
             sents.append({"text": s, "start": round(t, 3), "end": round(t + d, 3)})
