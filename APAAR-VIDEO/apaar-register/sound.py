@@ -143,7 +143,9 @@ def tick_clock(v=1.0):
 def hop(v=1.0, d=.2):
     t = tt(d); f = 330 * (1 + 1.6 * t / d); return (np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t / .09) * .2 * v).astype(np.float32)
 def land(v=1.0):
-    return (tap(.8 * v, 900, .02) + lp(thump(.4 * v, 90), 400) * .5).astype(np.float32)
+    a, b = tap(.8 * v, 900, .02), lp(thump(.4 * v, 90), 400) * .5
+    out = np.zeros(max(len(a), len(b)), np.float32); out[:len(a)] += a; out[:len(b)] += b
+    return out
 def blip(v=1.0):
     d = .07; t = tt(d); return (np.sign(np.sin(2 * np.pi * 1400 * t)) * np.exp(-t / .03) * .12 * v).astype(np.float32)
 
