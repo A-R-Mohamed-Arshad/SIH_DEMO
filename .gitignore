@@ -23,3 +23,7 @@ APAAR-VIDEO/apaar-register/out/
 APAAR-VIDEO/apaar-register/**/stills/
 APAAR-VIDEO/apaar-register/voices/*.wav
 APAAR-VIDEO/recordings/dom/
+APAAR-VIDEO/tour/rec/
+APAAR-VIDEO/tour/dom/
+APAAR-VIDEO/tour/qa/*.png
+APAAR-VIDEO/remotion/public/tour/

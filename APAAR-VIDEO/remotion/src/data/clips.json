@@ -1,9 +1,58 @@
 {
- "s02_signin.mp4": {
-  "duration": 9.8,
+ "s01_national.mp4": {
+  "duration": 13.967,
   "events": [
    {
-    "t": 1.114,
+    "t": 0.43,
+    "type": "box",
+    "label": "figures",
+    "x": 185,
+    "y": 551,
+    "w": 2190,
+    "h": 174
+   },
+   {
+    "t": 1.326,
+    "type": "beat",
+    "label": "figures"
+   },
+   {
+    "t": 3.027,
+    "type": "box",
+    "label": "alert",
+    "x": 222,
+    "y": 980,
+    "w": 1040,
+    "h": 225
+   },
+   {
+    "t": 4.082,
+    "type": "beat",
+    "label": "alert"
+   },
+   {
+    "t": 7.402,
+    "type": "click",
+    "label": "Programmes tab",
+    "x": 491,
+    "y": 793,
+    "sound": "toggle"
+   },
+   {
+    "t": 11.6,
+    "type": "click",
+    "label": "Overview tab",
+    "x": 268,
+    "y": 793,
+    "sound": "toggle"
+   }
+  ]
+ },
+ "s02_signin.mp4": {
+  "duration": 9.733,
+  "events": [
+   {
+    "t": 1.133,
     "type": "box",
     "label": "accounts",
     "x": 1293,
@@ -12,7 +61,7 @@
     "h": 836
    },
    {
-    "t": 3.672,
+    "t": 3.736,
     "type": "click",
     "label": "text size A+",
     "x": 2489,
@@ -20,7 +69,7 @@
     "sound": "toggle"
    },
    {
-    "t": 5.906,
+    "t": 5.838,
     "type": "click",
     "label": "text size A",
     "x": 2428,
@@ -28,7 +77,7 @@
     "sound": "toggle"
    },
    {
-    "t": 7.405,
+    "t": 7.302,
     "type": "click",
     "label": "Kaveri staff",
     "x": 1432,
@@ -36,7 +85,7 @@
     "sound": "click"
    },
    {
-    "t": 8.004,
+    "t": 7.938,
     "type": "beat",
     "label": "dashboard"
    }
@@ -46,7 +95,7 @@
   "duration": 9.167,
   "events": [
    {
-    "t": 0.407,
+    "t": 0.443,
     "type": "box",
     "label": "cse_strip",
     "x": 222,
@@ -55,7 +104,7 @@
     "h": 268
    },
    {
-    "t": 3.115,
+    "t": 3.235,
     "type": "box",
     "label": "sn_row",
     "x": 222,
@@ -64,7 +113,7 @@
     "h": 57
    },
    {
-    "t": 5.858,
+    "t": 5.943,
     "type": "box",
     "label": "figures",
     "x": 185,
@@ -75,10 +124,10 @@
   ]
  },
  "s04_upload.mp4": {
-  "duration": 11.167,
+  "duration": 11.6,
   "events": [
    {
-    "t": 1.487,
+    "t": 1.533,
     "type": "click",
     "label": "Upload records",
     "x": 311,
@@ -86,7 +135,7 @@
     "sound": "click"
    },
    {
-    "t": 2.596,
+    "t": 2.709,
     "type": "box",
     "label": "template",
     "x": 185,
@@ -95,7 +144,7 @@
     "h": 500
    },
    {
-    "t": 5.61,
+    "t": 5.733,
     "type": "click",
     "label": "choose file",
     "x": 0,
@@ -103,7 +152,7 @@
     "sound": "click"
    },
    {
-    "t": 7.484,
+    "t": 7.75,
     "type": "click",
     "label": "Upload and check",
     "x": 1474,
@@ -111,12 +160,12 @@
     "sound": "click"
    },
    {
-    "t": 8.126,
+    "t": 8.434,
     "type": "beat",
     "label": "counts"
    },
    {
-    "t": 8.145,
+    "t": 8.521,
     "type": "box",
     "label": "counts",
     "x": 185,
@@ -127,10 +176,10 @@
   ]
  },
  "s05_fix.mp4": {
-  "duration": 61.333,
+  "duration": 61.833,
   "events": [
    {
-    "t": 2.393,
+    "t": 2.293,
     "type": "click",
     "label": "Error tab",
     "x": 440,
@@ -138,7 +187,7 @@
     "sound": "toggle"
    },
    {
-    "t": 3.576,
+    "t": 3.488,
     "type": "box",
     "label": "suggestion",
     "x": 187,
@@ -147,12 +196,12 @@
     "h": 189
    },
    {
-    "t": 5.005,
+    "t": 4.85,
     "type": "beat",
     "label": "suggestion"
    },
    {
-    "t": 7.88,
+    "t": 7.722,
     "type": "click",
     "label": "Use this",
     "x": 1866,
@@ -160,17 +209,17 @@
     "sound": "click"
    },
    {
-    "t": 8.464,
+    "t": 8.294,
     "type": "beat",
     "label": "accepted"
    },
    {
-    "t": 9.666,
+    "t": 9.515,
     "type": "beat",
     "label": "ff_start"
    },
    {
-    "t": 10.879,
+    "t": 10.954,
     "type": "click",
     "label": "edit KIT26CSE906",
     "x": 2136,
@@ -178,7 +227,7 @@
     "sound": "click"
    },
    {
-    "t": 13.318,
+    "t": 13.638,
     "type": "click",
     "label": "APAAR ID",
     "x": 565,
@@ -186,14 +235,14 @@
     "sound": "click"
    },
    {
-    "t": 13.596,
+    "t": 13.939,
     "type": "type",
     "label": "APAAR ID",
     "chars": 12,
     "duration": 0.54
    },
    {
-    "t": 16.145,
+    "t": 16.541,
     "type": "click",
     "label": "save row",
     "x": 394,
@@ -201,7 +250,7 @@
     "sound": "click"
    },
    {
-    "t": 18.905,
+    "t": 19.391,
     "type": "click",
     "label": "edit KIT26ECE907",
     "x": 2136,
@@ -209,7 +258,7 @@
     "sound": "click"
    },
    {
-    "t": 21.49,
+    "t": 22.089,
     "type": "click",
     "label": "APAAR ID",
     "x": 565,
@@ -217,14 +266,14 @@
     "sound": "click"
    },
    {
-    "t": 21.794,
+    "t": 22.35,
     "type": "type",
     "label": "APAAR ID",
     "chars": 12,
     "duration": 0.54
    },
    {
-    "t": 24.419,
+    "t": 24.926,
     "type": "click",
     "label": "save row",
     "x": 394,
@@ -232,7 +281,7 @@
     "sound": "click"
    },
    {
-    "t": 27.039,
+    "t": 27.663,
     "type": "click",
     "label": "edit KIT26ECE910",
     "x": 2136,
@@ -240,7 +289,7 @@
     "sound": "click"
    },
    {
-    "t": 29.433,
+    "t": 30.004,
     "type": "click",
     "label": "Date of birth (YYYY-MM-DD)",
     "x": 565,
@@ -248,14 +297,14 @@
     "sound": "click"
    },
    {
-    "t": 29.723,
+    "t": 30.284,
     "type": "type",
     "label": "Date of birth (YYYY-MM-DD)",
     "chars": 10,
     "duration": 0.45
    },
    {
-    "t": 31.854,
+    "t": 32.313,
     "type": "click",
     "label": "save row",
     "x": 394,
@@ -263,7 +312,7 @@
     "sound": "click"
    },
    {
-    "t": 34.189,
+    "t": 34.56,
     "type": "click",
     "label": "edit KIT26CSE913",
     "x": 2136,
@@ -271,7 +320,7 @@
     "sound": "click"
    },
    {
-    "t": 36.457,
+    "t": 36.817,
     "type": "click",
     "label": "Seat category",
     "x": 565,
@@ -279,7 +328,7 @@
     "sound": "toggle"
    },
    {
-    "t": 38.337,
+    "t": 38.549,
     "type": "click",
     "label": "save row",
     "x": 394,
@@ -287,7 +336,7 @@
     "sound": "click"
    },
    {
-    "t": 40.614,
+    "t": 40.795,
     "type": "click",
     "label": "edit KIT26MTA914",
     "x": 2136,
@@ -295,7 +344,7 @@
     "sound": "click"
    },
    {
-    "t": 42.824,
+    "t": 43.027,
     "type": "click",
     "label": "Programme code",
     "x": 1280,
@@ -303,14 +352,14 @@
     "sound": "click"
    },
    {
-    "t": 43.099,
+    "t": 43.318,
     "type": "type",
     "label": "Programme code",
     "chars": 9,
     "duration": 0.41
    },
    {
-    "t": 45.268,
+    "t": 45.353,
     "type": "click",
     "label": "save row",
     "x": 394,
@@ -318,7 +367,7 @@
     "sound": "click"
    },
    {
-    "t": 47.58,
+    "t": 47.696,
     "type": "click",
     "label": "edit KIT26ECE915",
     "x": 2136,
@@ -326,7 +375,7 @@
     "sound": "click"
    },
    {
-    "t": 49.334,
+    "t": 49.585,
     "type": "click",
     "label": "Gender",
     "x": 1280,
@@ -334,7 +383,7 @@
     "sound": "toggle"
    },
    {
-    "t": 51.744,
+    "t": 51.925,
     "type": "click",
     "label": "save row",
     "x": 394,
@@ -342,12 +391,12 @@
     "sound": "click"
    },
    {
-    "t": 52.814,
+    "t": 52.996,
     "type": "beat",
     "label": "ff_end"
    },
    {
-    "t": 54.073,
+    "t": 54.177,
     "type": "click",
     "label": "All rows",
     "x": 280,
@@ -355,7 +404,7 @@
     "sound": "toggle"
    },
    {
-    "t": 54.627,
+    "t": 54.88,
     "type": "box",
     "label": "duplicate",
     "x": 187,
@@ -364,7 +413,7 @@
     "h": 125
    },
    {
-    "t": 56.425,
+    "t": 56.888,
     "type": "click",
     "label": "Leave out",
     "x": 2279,
@@ -372,12 +421,12 @@
     "sound": "click"
    },
    {
-    "t": 58.356,
+    "t": 58.889,
     "type": "beat",
     "label": "ready"
    },
    {
-    "t": 58.368,
+    "t": 58.968,
     "type": "box",
     "label": "counts",
     "x": 185,
@@ -388,10 +437,10 @@
   ]
  },
  "s06_commit_aicte.mp4": {
-  "duration": 11.533,
+  "duration": 11.667,
   "events": [
    {
-    "t": 3.238,
+    "t": 3.223,
     "type": "box",
     "label": "figures",
     "x": 185,
@@ -400,26 +449,26 @@
     "h": 174
    },
    {
-    "t": 8.16,
+    "t": 8.183,
     "type": "beat",
     "label": "live_update"
    },
    {
-    "t": 8.224,
+    "t": 8.265,
     "type": "box",
     "label": "updated",
-    "x": 1290,
+    "x": 1303,
     "y": 464,
-    "w": 283,
+    "w": 270,
     "h": 32
    }
   ]
  },
  "s06_commit_inst.mp4": {
-  "duration": 27.467,
+  "duration": 28.4,
   "events": [
    {
-    "t": 0.828,
+    "t": 0.868,
     "type": "box",
     "label": "projection",
     "x": 185,
@@ -428,7 +477,7 @@
     "h": 1257
    },
    {
-    "t": 4.777,
+    "t": 4.733,
     "type": "click",
     "label": "Commit 15 rows",
     "x": 2244,
@@ -436,7 +485,7 @@
     "sound": "click"
    },
    {
-    "t": 5.403,
+    "t": 5.414,
     "type": "box",
     "label": "dialog",
     "x": 818,
@@ -445,7 +494,7 @@
     "h": 333
    },
    {
-    "t": 7.96,
+    "t": 7.897,
     "type": "click",
     "label": "confirm commit",
     "x": 1568,
@@ -453,17 +502,17 @@
     "sound": "click"
    },
    {
-    "t": 8.55,
+    "t": 8.466,
     "type": "beat",
     "label": "committed"
    }
   ]
  },
  "s07_seatcheck.mp4": {
-  "duration": 8.6,
+  "duration": 8.867,
   "events": [
    {
-    "t": 1.342,
+    "t": 1.368,
     "type": "click",
     "label": "Seat check",
     "x": 1346,
@@ -471,7 +520,7 @@
     "sound": "click"
    },
    {
-    "t": 3.142,
+    "t": 3.261,
     "type": "click",
     "label": "Seat category",
     "x": 1094,
@@ -479,7 +528,7 @@
     "sound": "toggle"
    },
    {
-    "t": 4.557,
+    "t": 4.705,
     "type": "click",
     "label": "Check seats",
     "x": 1582,
@@ -487,12 +536,12 @@
     "sound": "click"
    },
    {
-    "t": 5.147,
+    "t": 5.293,
     "type": "beat",
     "label": "result"
    },
    {
-    "t": 5.163,
+    "t": 5.334,
     "type": "box",
     "label": "result",
     "x": 185,
@@ -503,10 +552,10 @@
   ]
  },
  "s08_demob.mp4": {
-  "duration": 18.633,
+  "duration": 18.533,
   "events": [
    {
-    "t": 1.192,
+    "t": 1.283,
     "type": "click",
     "label": "Upload records",
     "x": 311,
@@ -514,7 +563,7 @@
     "sound": "click"
    },
    {
-    "t": 3.548,
+    "t": 3.689,
     "type": "click",
     "label": "Upload and check",
     "x": 1474,
@@ -522,7 +571,7 @@
     "sound": "click"
    },
    {
-    "t": 4.158,
+    "t": 4.319,
     "type": "box",
     "label": "projection",
     "x": 185,
@@ -531,12 +580,12 @@
     "h": 498
    },
    {
-    "t": 5.092,
+    "t": 5.183,
     "type": "beat",
     "label": "projection"
    },
    {
-    "t": 8.205,
+    "t": 8.317,
     "type": "click",
     "label": "Commit 5 rows",
     "x": 2250,
@@ -544,7 +593,7 @@
     "sound": "click"
    },
    {
-    "t": 10.708,
+    "t": 10.863,
     "type": "click",
     "label": "confirm",
     "x": 1574,
@@ -552,7 +601,7 @@
     "sound": "click"
    },
    {
-    "t": 12.207,
+    "t": 12.344,
     "type": "click",
     "label": "Flags",
     "x": 924,
@@ -560,7 +609,7 @@
     "sound": "click"
    },
    {
-    "t": 12.831,
+    "t": 12.996,
     "type": "box",
     "label": "flags",
     "x": 187,
@@ -569,17 +618,17 @@
     "h": 871
    },
    {
-    "t": 12.831,
+    "t": 12.996,
     "type": "beat",
     "label": "flags"
    }
   ]
  },
  "s09_privacy_aicte.mp4": {
-  "duration": 9.133,
+  "duration": 9.333,
   "events": [
    {
-    "t": 3.614,
+    "t": 3.948,
     "type": "box",
     "label": "evidence",
     "x": 185,
@@ -590,10 +639,10 @@
   ]
  },
  "s09_privacy_inst.mp4": {
-  "duration": 23.733,
+  "duration": 23.467,
   "events": [
    {
-    "t": 2.173,
+    "t": 2.43,
     "type": "click",
     "label": "open D003",
     "x": 458,
@@ -601,7 +650,7 @@
     "sound": "click"
    },
    {
-    "t": 2.773,
+    "t": 3.067,
     "type": "box",
     "label": "evidence",
     "x": 185,
@@ -610,17 +659,17 @@
     "h": 382
    },
    {
-    "t": 4.984,
+    "t": 5.248,
     "type": "beat",
     "label": "compare"
    }
   ]
  },
  "s10_workflow_aicte.mp4": {
-  "duration": 9.233,
+  "duration": 8.867,
   "events": [
    {
-    "t": 2.074,
+    "t": 1.989,
     "type": "click",
     "label": "note",
     "x": 1280,
@@ -628,14 +677,14 @@
     "sound": "click"
    },
    {
-    "t": 2.355,
+    "t": 2.261,
     "type": "type",
     "label": "note",
     "chars": 58,
     "duration": 1.62
    },
    {
-    "t": 6.156,
+    "t": 5.928,
     "type": "click",
     "label": "Request clarification",
     "x": 384,
@@ -643,7 +692,7 @@
     "sound": "click"
    },
    {
-    "t": 6.743,
+    "t": 6.556,
     "type": "box",
     "label": "history",
     "x": 185,
@@ -652,17 +701,17 @@
     "h": 326
    },
    {
-    "t": 6.743,
+    "t": 6.556,
     "type": "beat",
     "label": "clarified"
    }
   ]
  },
  "s10_workflow_auto.mp4": {
-  "duration": 5.4,
+  "duration": 5.633,
   "events": [
    {
-    "t": 0.802,
+    "t": 0.824,
     "type": "box",
     "label": "history",
     "x": 185,
@@ -671,17 +720,17 @@
     "h": 326
    },
    {
-    "t": 1.607,
+    "t": 1.817,
     "type": "beat",
     "label": "auto"
    }
   ]
  },
  "s10_workflow_cancel.mp4": {
-  "duration": 50.267,
+  "duration": 46.833,
   "events": [
    {
-    "t": 1.923,
+    "t": 2.445,
     "type": "click",
     "label": "open GEC26CSE901",
     "x": 284,
@@ -689,7 +738,7 @@
     "sound": "click"
    },
    {
-    "t": 3.991,
+    "t": 4.573,
     "type": "click",
     "label": "Change status",
     "x": 2254,
@@ -697,7 +746,7 @@
     "sound": "click"
    },
    {
-    "t": 6.279,
+    "t": 6.956,
     "type": "click",
     "label": "New status",
     "x": 381,
@@ -705,7 +754,7 @@
     "sound": "toggle"
    },
    {
-    "t": 7.999,
+    "t": 8.778,
     "type": "click",
     "label": "reason",
     "x": 1215,
@@ -713,14 +762,14 @@
     "sound": "click"
    },
    {
-    "t": 8.276,
+    "t": 9.045,
     "type": "type",
     "label": "reason",
     "chars": 31,
     "duration": 1.24
    },
    {
-    "t": 11.26,
+    "t": 12.198,
     "type": "click",
     "label": "Mark as cancelled",
     "x": 2033,
@@ -728,12 +777,12 @@
     "sound": "click"
    },
    {
-    "t": 11.836,
+    "t": 12.78,
     "type": "beat",
     "label": "ff_start"
    },
    {
-    "t": 13.271,
+    "t": 14.379,
     "type": "click",
     "label": "open GEC26CSE902",
     "x": 288,
@@ -741,7 +790,7 @@
     "sound": "click"
    },
    {
-    "t": 15.226,
+    "t": 16.573,
     "type": "click",
     "label": "Change status",
     "x": 2254,
@@ -749,7 +798,7 @@
     "sound": "click"
    },
    {
-    "t": 17.42,
+    "t": 18.571,
     "type": "click",
     "label": "New status",
     "x": 381,
@@ -757,7 +806,7 @@
     "sound": "toggle"
    },
    {
-    "t": 19.238,
+    "t": 20.365,
     "type": "click",
     "label": "reason",
     "x": 1215,
@@ -765,14 +814,14 @@
     "sound": "click"
    },
    {
-    "t": 19.517,
+    "t": 20.645,
     "type": "type",
     "label": "reason",
     "chars": 31,
     "duration": 0.68
    },
    {
-    "t": 21.968,
+    "t": 23.183,
     "type": "click",
     "label": "Mark as cancelled",
     "x": 2033,
@@ -780,7 +829,7 @@
     "sound": "click"
    },
    {
-    "t": 23.94,
+    "t": 25.231,
     "type": "click",
     "label": "open GEC26CSE903",
     "x": 295,
@@ -788,7 +837,7 @@
     "sound": "click"
    },
    {
-    "t": 25.96,
+    "t": 27.312,
     "type": "click",
     "label": "Change status",
     "x": 2254,
@@ -796,7 +845,7 @@
     "sound": "click"
    },
    {
-    "t": 28.129,
+    "t": 29.438,
     "type": "click",
     "label": "New status",
     "x": 381,
@@ -804,7 +853,7 @@
     "sound": "toggle"
    },
    {
-    "t": 29.85,
+    "t": 31.262,
     "type": "click",
     "label": "reason",
     "x": 1215,
@@ -812,14 +861,14 @@
     "sound": "click"
    },
    {
-    "t": 30.121,
+    "t": 31.536,
     "type": "type",
     "label": "reason",
     "chars": 31,
     "duration": 0.68
    },
    {
-    "t": 32.858,
+    "t": 33.956,
     "type": "click",
     "label": "Mark as cancelled",
     "x": 2033,
@@ -827,7 +876,7 @@
     "sound": "click"
    },
    {
-    "t": 34.923,
+    "t": 36.038,
     "type": "click",
     "label": "open GEC26BTECHCSE001",
     "x": 304,
@@ -835,7 +884,7 @@
     "sound": "click"
    },
    {
-    "t": 36.983,
+    "t": 38.051,
     "type": "click",
     "label": "Change status",
     "x": 2254,
@@ -843,7 +892,7 @@
     "sound": "click"
    },
    {
-    "t": 40.563,
+    "t": 40.151,
     "type": "click",
     "label": "New status",
     "x": 381,
@@ -851,7 +900,7 @@
     "sound": "toggle"
    },
    {
-    "t": 44.088,
+    "t": 42.003,
     "type": "click",
     "label": "reason",
     "x": 1215,
@@ -859,14 +908,14 @@
     "sound": "click"
    },
    {
-    "t": 44.375,
+    "t": 42.258,
     "type": "type",
     "label": "reason",
     "chars": 31,
     "duration": 0.68
    },
    {
-    "t": 47.254,
+    "t": 44.636,
     "type": "click",
     "label": "Mark as cancelled",
     "x": 2033,
@@ -874,17 +923,17 @@
     "sound": "click"
    },
    {
-    "t": 47.829,
+    "t": 45.205,
     "type": "beat",
     "label": "ff_end"
    }
   ]
  },
  "s11_priority.mp4": {
-  "duration": 12.733,
+  "duration": 12.967,
   "events": [
    {
-    "t": 1.546,
+    "t": 1.539,
     "type": "click",
     "label": "Review priority",
     "x": 385,
@@ -892,7 +941,7 @@
     "sound": "click"
    },
    {
-    "t": 2.198,
+    "t": 2.16,
     "type": "box",
     "label": "disclaimer",
     "x": 185,
@@ -901,7 +950,7 @@
     "h": 86
    },
    {
-    "t": 3.411,
+    "t": 3.393,
     "type": "box",
     "label": "top",
     "x": 185,
@@ -910,7 +959,7 @@
     "h": 734
    },
    {
-    "t": 7.596,
+    "t": 7.623,
     "type": "click",
     "label": "Identity candidates",
     "x": 1081,
@@ -918,7 +967,7 @@
     "sound": "click"
    },
    {
-    "t": 8.235,
+    "t": 8.236,
     "type": "box",
     "label": "weights",
     "x": 185,
@@ -927,17 +976,17 @@
     "h": 713
    },
    {
-    "t": 9.269,
+    "t": 9.544,
     "type": "beat",
     "label": "weights"
    }
   ]
  },
  "s12_issue_inst.mp4": {
-  "duration": 8.867,
+  "duration": 7.667,
   "events": [
    {
-    "t": 1.952,
+    "t": 1.645,
     "type": "click",
     "label": "open record",
     "x": 272,
@@ -945,7 +994,7 @@
     "sound": "click"
    },
    {
-    "t": 3.649,
+    "t": 3.308,
     "type": "click",
     "label": "Signed records tab",
     "x": 471,
@@ -953,7 +1002,7 @@
     "sound": "toggle"
    },
    {
-    "t": 5.169,
+    "t": 4.755,
     "type": "click",
     "label": "Issue signed record",
     "x": 2182,
@@ -961,17 +1010,17 @@
     "sound": "click"
    },
    {
-    "t": 5.818,
+    "t": 5.306,
     "type": "beat",
     "label": "issued"
    }
   ]
  },
  "s12_issue_student.mp4": {
-  "duration": 11.633,
+  "duration": 10.867,
   "events": [
    {
-    "t": 0.783,
+    "t": 0.811,
     "type": "box",
     "label": "claims",
     "x": 185,
@@ -980,7 +1029,7 @@
     "h": 556
    },
    {
-    "t": 7.43,
+    "t": 6.823,
     "type": "click",
     "label": "Create share token",
     "x": 372,
@@ -988,7 +1037,7 @@
     "sound": "click"
    },
    {
-    "t": 8.084,
+    "t": 7.49,
     "type": "box",
     "label": "qr",
     "x": 1294,
@@ -997,9 +1046,305 @@
     "h": 367
    },
    {
-    "t": 8.095,
+    "t": 7.498,
     "type": "beat",
     "label": "shared"
+   }
+  ]
+ },
+ "s13_verify.mp4": {
+  "duration": 13.533,
+  "events": [
+   {
+    "t": 1.298,
+    "type": "click",
+    "label": "paste token",
+    "x": 850,
+    "y": 890,
+    "sound": "click"
+   },
+   {
+    "t": 2.49,
+    "type": "type",
+    "label": "paste",
+    "chars": 1,
+    "duration": 0.1
+   },
+   {
+    "t": 3.903,
+    "type": "click",
+    "label": "Verify record",
+    "x": 334,
+    "y": 1269,
+    "sound": "click"
+   },
+   {
+    "t": 4.573,
+    "type": "box",
+    "label": "checks",
+    "x": 185,
+    "y": 1370,
+    "w": 2190,
+    "h": 1374
+   },
+   {
+    "t": 4.573,
+    "type": "beat",
+    "label": "valid"
+   },
+   {
+    "t": 8.204,
+    "type": "click",
+    "label": "tamper",
+    "x": 776,
+    "y": 1176,
+    "sound": "click"
+   },
+   {
+    "t": 8.823,
+    "type": "box",
+    "label": "failed",
+    "x": 185,
+    "y": 1370,
+    "w": 2190,
+    "h": 1299
+   },
+   {
+    "t": 10.16,
+    "type": "beat",
+    "label": "tampered"
+   }
+  ]
+ },
+ "s14_consent_result.mp4": {
+  "duration": 6.967,
+  "events": [
+   {
+    "t": 1.754,
+    "type": "click",
+    "label": "View result",
+    "x": 2014,
+    "y": 944,
+    "sound": "click"
+   },
+   {
+    "t": 2.445,
+    "type": "box",
+    "label": "result",
+    "x": 187,
+    "y": 897,
+    "w": 2187,
+    "h": 179
+   },
+   {
+    "t": 3.439,
+    "type": "beat",
+    "label": "result"
+   }
+  ]
+ },
+ "s14_consent_student.mp4": {
+  "duration": 9.367,
+  "events": [
+   {
+    "t": 2.002,
+    "type": "click",
+    "label": "Review request",
+    "x": 2211,
+    "y": 656,
+    "sound": "click"
+   },
+   {
+    "t": 2.649,
+    "type": "box",
+    "label": "fields",
+    "x": 818,
+    "y": 356,
+    "w": 924,
+    "h": 757
+   },
+   {
+    "t": 7.005,
+    "type": "click",
+    "label": "Allow",
+    "x": 1635,
+    "y": 1034,
+    "sound": "click"
+   }
+  ]
+ },
+ "s14_consent_verifier.mp4": {
+  "duration": 14.667,
+  "events": [
+   {
+    "t": 1.636,
+    "type": "click",
+    "label": "APAAR",
+    "x": 565,
+    "y": 581,
+    "sound": "click"
+   },
+   {
+    "t": 1.904,
+    "type": "type",
+    "label": "APAAR",
+    "chars": 12,
+    "duration": 0.48
+   },
+   {
+    "t": 3.743,
+    "type": "click",
+    "label": "DOB",
+    "x": 1280,
+    "y": 581,
+    "sound": "click"
+   },
+   {
+    "t": 4.014,
+    "type": "type",
+    "label": "DOB",
+    "chars": 10,
+    "duration": 0.4
+   },
+   {
+    "t": 5.745,
+    "type": "click",
+    "label": "purpose",
+    "x": 1995,
+    "y": 581,
+    "sound": "click"
+   },
+   {
+    "t": 6.055,
+    "type": "type",
+    "label": "purpose",
+    "chars": 27,
+    "duration": 0.81
+   },
+   {
+    "t": 8.359,
+    "type": "click",
+    "label": "Send request",
+    "x": 336,
+    "y": 702,
+    "sound": "click"
+   },
+   {
+    "t": 8.993,
+    "type": "box",
+    "label": "message",
+    "x": 1781,
+    "y": 1311,
+    "w": 736,
+    "h": 86
+   },
+   {
+    "t": 11.383,
+    "type": "click",
+    "label": "Check result",
+    "x": 2030,
+    "y": 921,
+    "sound": "click"
+   },
+   {
+    "t": 11.942,
+    "type": "beat",
+    "label": "403"
+   }
+  ]
+ },
+ "s15_audit.mp4": {
+  "duration": 6.8,
+  "events": [
+   {
+    "t": 2.46,
+    "type": "click",
+    "label": "Verify chain integrity",
+    "x": 348,
+    "y": 510,
+    "sound": "click"
+   },
+   {
+    "t": 3.137,
+    "type": "box",
+    "label": "chain",
+    "x": 185,
+    "y": 582,
+    "w": 2190,
+    "h": 86
+   },
+   {
+    "t": 3.137,
+    "type": "beat",
+    "label": "intact"
+   }
+  ]
+ },
+ "s16_minor.mp4": {
+  "duration": 8.233,
+  "events": [
+   {
+    "t": 1.283,
+    "type": "box",
+    "label": "share",
+    "x": 185,
+    "y": 1100,
+    "w": 2190,
+    "h": 556
+   },
+   {
+    "t": 2.26,
+    "type": "click",
+    "label": "choose claim",
+    "x": 241,
+    "y": 1294,
+    "sound": "toggle"
+   },
+   {
+    "t": 4.18,
+    "type": "click",
+    "label": "Create share token",
+    "x": 372,
+    "y": 720,
+    "sound": "click"
+   },
+   {
+    "t": 4.806,
+    "type": "box",
+    "label": "held",
+    "x": 185,
+    "y": -512,
+    "w": 2190,
+    "h": 86
+   },
+   {
+    "t": 4.806,
+    "type": "beat",
+    "label": "held"
+   }
+  ]
+ },
+ "s17_status.mp4": {
+  "duration": 11.6,
+  "events": [
+   {
+    "t": 0.425,
+    "type": "box",
+    "label": "counts",
+    "x": 185,
+    "y": 489,
+    "w": 2190,
+    "h": 174
+   },
+   {
+    "t": 1.381,
+    "type": "beat",
+    "label": "counts"
+   },
+   {
+    "t": 5.532,
+    "type": "beat",
+    "label": "simulated"
    }
   ]
  }
