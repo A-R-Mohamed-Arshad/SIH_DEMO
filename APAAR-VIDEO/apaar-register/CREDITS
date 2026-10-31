@@ -1,0 +1,22 @@
+Third-party material in apaar-register.mp4 and its source
+
+Software used to make the film
+- Lemo-Opuscar render tools (core/lib.js, core/render/*, core/audio/sfx.py): MIT licence, https://github.com/lemomo-ai/lemo-opuscar.
+  The Living Screencast engine structure (timeline, actor, cursor, camera) and the watercolour brush-stroke model were studied and re-written for this film.
+- Playwright / Chromium: Apache-2.0 (screen DOM capture and rendering). FFmpeg: LGPL/GPL (encode). numpy, scipy, soundfile, soxr: BSD.
+
+Fonts (SIL Open Font License 1.1, self-hosted in fonts/)
+- Atkinson Hyperlegible (Braille Institute), IBM Plex Mono (IBM).
+
+Voice
+- Narration generated with Chatterbox TTS (Resemble AI, MIT licence). Chatterbox adds an imperceptible "Perth" watermark to generated audio; it was left in place.
+- Speech-to-text check and word timings: faster-whisper with the Whisper base.en model (MIT).
+
+Music and sound effects
+- Original, synthesized in sound.py (felt piano, kalimba, upright bass and brushed percussion models). No samples, no third-party recordings.
+
+Pictures
+- The interface is the project's own application (this repository), redrawn from live DOM snapshots of a running instance with synthetic data.
+- The mascot (a hand-painted admission slip) and every painted scene are original and drawn in code (mascot.js, paint.js). No external images.
+
+The user is responsible for the materials they add to the film.

@@ -1,6 +1,6 @@
 // render(t): camera → wallpaper, painted layers, the app window (real DOM), the mascot, the cursor, the HUD.
 import { clamp, seg, eo, eio, back, hash } from '/core/lib.js';
-import { loadVoice, camAt, EV, VO } from './core.js';
+import { loadVoice, camAt, EV, VO, W as W2 } from './core.js';
 import * as FM from './film.js';
 import * as CH from './chapters.js';
 import * as PT from './paint.js';
@@ -122,6 +122,11 @@ function hud(t, C, A) {
   const s = FM.SUBS.find(x => t >= x.t0 && t < x.t1);
   if (s && !NOSUBS) { const op = Math.min(seg(t, s.t0, s.t0 + .12), 1 - seg(t, s.t1 - .15, s.t1));
     h += `<div class="f-cap" style="opacity:${op};transform:translate(-50%,${(1 - eo(seg(t, s.t0, s.t0 + .2))) * 10}px)">${s.text}</div>`; }
+  // end card: diegetic to the closing window, appears as the line is spoken
+  { const e0 = W2('s6_close', 'Every') - .15, k = seg(t, e0, e0 + .9);
+    if (k > 0) { const o = (n, a) => Math.min(1, Math.max(0, (t - e0 - a) / .6)) * k;
+      h += `<div class="f-end" style="opacity:${k}"><div class="a" style="opacity:${o(0, 0)}">APAAR Student Register</div><div class="b" style="opacity:${o(1, .35)};transform:translateY(${(1 - o(1, .35)) * 14}px)">Every seat counted. Every student verifiable.</div>
+      <div class="c" style="opacity:${o(2, 1.1)}">SIH26263 · apaar-student-register.vercel.app</div><div class="d" style="opacity:${o(3, 1.6)}">Synthetic data. The APAAR registry check and other official connections are simulated in this prototype.</div></div>`; } }
   if (H.wipe) h += H.wipe;
   if (H.fade) h += `<div class="f-fade" style="opacity:${H.fade}"></div>`;
   if (t < .4) h += `<div class="f-fade" style="background:#0a2556;opacity:${1 - eo(t / .4)}"></div>`;
