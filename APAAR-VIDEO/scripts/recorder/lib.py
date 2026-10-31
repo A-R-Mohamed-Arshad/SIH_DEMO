@@ -115,6 +115,7 @@ class Clip:
     def box(self, label: str, locator):
         """Record an element's box (video pixels) for zooms/callouts."""
         b = locator.bounding_box()
+        self.tag(locator, label)
         self.snap(label)
         if b:
             self.log("box", label=label, x=round(b["x"] * SCALE), y=round(b["y"] * SCALE),
@@ -123,6 +124,13 @@ class Clip:
     def beat(self, label: str):
         self.log("beat", label=label)
         self.snap(label)
+
+    def tag(self, locator, label: str):
+        """Mark the element in the live page so the saved DOM carries data-a=<label> for the film's cursor and mascot."""
+        try:
+            locator.first.evaluate("(e, l) => e.setAttribute('data-a', l)", label)
+        except Exception:  # noqa: BLE001
+            pass
 
     def snap(self, label: str):
         """Save the live DOM (with form values and canvases inlined) so the film can redraw the real UI in HTML."""
@@ -159,6 +167,9 @@ class Clip:
 
     def click(self, locator, label: str = "", hold: int = 450, sound: str = "click", dx: float = 0.5, dy: float = 0.5):
         x, y = self.move_to(locator, dx, dy)
+        if label:
+            self.tag(locator, "click:" + label)
+            self.snap("click_" + "".join(ch if ch.isalnum() else "_" for ch in label)[:40])
         self.log("click", label=label, x=round(x * SCALE), y=round(y * SCALE), sound=sound)
         self.page.mouse.down()
         self.page.wait_for_timeout(70)

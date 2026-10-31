@@ -471,7 +471,11 @@ def s14_consent(b, st, R):
     finish(c, R)
 
     cs = Clip(s, "s14_consent_student", OUT).start()
-    go(s, "/me", "text=Verification requests waiting for you")
+    s.goto(f"{BASE}/#/me")
+    s.reload()  # the student's page was opened before the verifier's request existed
+    s.wait_for_selector("text=Verification requests waiting for you")
+    s.wait_for_timeout(300)
+    settle_rules(s)
     cs.click(s.get_by_role("button", name="Review request").first, "Review request")
     dlg = s.locator(".dialog")
     dlg.wait_for()
