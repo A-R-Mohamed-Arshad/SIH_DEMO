@@ -34,7 +34,7 @@ export const SEALS = [];          // painted ring pulses {t, key}
 /** Camera focus on an element of a screen. */
 function focus(t, screen, key, z, d = 1.1, e = 'eio') {
   const r = meas(screen, key); if (!r) { console.warn('no anchor', screen, key); return; }
-  const w = worldOf(r); cam(t, d, [w.x, w.y, z], e);
+  const w = worldOf(r); z = Math.min(z, 1080 / (r.h * 1.25), 1920 / (r.w * 1.08)); cam(t, d, [w.x, w.y, Math.max(1, z)], e);
 }
 
 export function buildChapters(ctx) {
@@ -73,7 +73,7 @@ export function buildChapters(ctx) {
   const ff0 = b3 + .2, ff1 = b4 - .3; RAMPS.push({ t0: ff0, t1: ff1, x: 8, what: 'six more fixes' });
   shot(b4 + 4.2, k0); shot(b4 + 6.2, k1); shot(b4 + 8.4, k2);
   focus(b1, u1, 'counts', 1.5); focus(b2, f1, 'suggestion', 1.8); cam(b3 - .2, 1.0, [960, 560, 1.25], 'eio'); focus(b4, f3, 'counts', 1.45); focus(b4 + 4.2, k0, 'projection', 1.4);
-  focus(b4 + 6.2, k1, 'dialog', 1.5); focus(b4 + 8.4, k2, 'projection', 1.25);
+  focus(b4 + 6.2, k1, 'dialog', 1.5); focus(b4 + 8.4, k2, 'projection', 1.0);
   SPOTS.push({ t0: b2 + .6, t1: b2 + 3.4, key: 'suggestion' });
   T.fixOk = W('s4b_upload', 'did-you-mean') + 1.1; OKS.push({ t: T.fixOk, key: 'suggestion' });
   CUR.show(86.5, 108).move(86.5, 86.5, pt(1400, 800)).move(86.6, b1 - .4, at('template', .5, .5), 40).click(b1 - .15)
@@ -165,7 +165,7 @@ export function buildChapters(ctx) {
 
   // ═══ 07 Audit and honesty (175–190) ═══
   CHAPTERS.push({ no: '07', nm: 'Audit and honesty', t0: 175, t1: 190 });
-  const z0 = scr('s15_close', 'intact'), z1 = scr('s17_status', 'counts'), z2 = scr('s17_status', 'simulated');
+  const z0 = scr('s15_audit', 'intact'), z1 = scr('s17_status', 'counts'), z2 = scr('s17_status', 'simulated');
   shot(175, z0, { url: 'apaar-student-register.vercel.app/#/audit' });
   const g1 = W('s4g_audit', 'hash-chained') - .3, g2 = W('s4g_audit', 'public') - .4, g3 = W('s4g_audit', 'simulated') - .3;
   shot(g2, z1, { url: 'apaar-student-register.vercel.app/#/status' }); shot(g3, z2);
@@ -180,6 +180,7 @@ export function buildChapters(ctx) {
    .stand(g2 + .6, 190, at('counts', .1, 0), { eyes: 'r' });
 
   // closing window screen: the verified record the mascot sleeps on
+  shot(189.5, null);
   shot(220.0, e2, { url: 'apaar-student-register.vercel.app/#/verify', open: true });
   shot(238.4, null);
   CHAPTERS.forEach(c => { ev(c.t0 - .1, 'whoosh', { d: 1 }); ev(c.t0 + .25, 'wipe'); });

@@ -9,7 +9,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#e9e4d8
 #stage{position:absolute;inset:0;overflow:hidden}
 .layer{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
 /* desktop: warm paper wallpaper (the painted world the app floats on) */
-#wall{position:absolute;left:-1400px;top:-1000px;width:4720px;height:3080px;background:
+#wall{position:absolute;left:-1400px;top:-1000px;width:6000px;height:4400px;background:
   radial-gradient(1000px 700px at 1700px 1100px,#f4ead6 0,transparent 70%),
   radial-gradient(1100px 800px at 3000px 1900px,#e8ddc6 0,transparent 70%),#ece4d3}
 /* the browser window holding the real app */
@@ -43,6 +43,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#e9e4d8
 <style>
 /* the app's own stylesheet styles .f-win .doc; keep the film's own layers out of its reach */
 .f-doc{font-family:var(--sans)}
+.f-doc .overlay{position:absolute!important;left:0;top:var(--scroll,0px);width:1440px;height:810px}
 </style>
 </head><body>
 <div id="stage">

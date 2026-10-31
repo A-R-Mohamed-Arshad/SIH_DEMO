@@ -29,8 +29,8 @@ export function form(c, t, o) {
 // ── the numeral "60", made of student slips ───────────────────────────────────────
 // digit centre-lines (world coordinates), stroke half-width HW
 const HW = 62;
-const SIX = [...Array(48)].map((_, i) => { const a = Math.PI * .5 + i / 47 * Math.PI * 2; return [770 + Math.cos(a) * 165, 700 + Math.sin(a) * 165]; })
-  .concat(quad(930, 250, 690, 330, 640, 640, 24));
+const SIX = quad(910, 215, 640, 290, 612, 700, 24)
+  .concat([...Array(49)].map((_, i) => { const a = Math.PI + i / 48 * Math.PI * 2; return [772 + Math.cos(a) * 160, 722 + Math.sin(a) * 175]; }));
 const ZERO = [...Array(72)].map((_, i) => { const a = i / 71 * Math.PI * 2; return [1190 + Math.cos(a) * 175, 560 + Math.sin(a) * 305]; });
 const distTo = (pts, x, y) => { let d = 1e9; for (let i = 0; i < pts.length - 1; i++) { const [ax, ay] = pts[i], [bx, by] = pts[i + 1], dx = bx - ax, dy = by - ay, L = dx * dx + dy * dy || 1;
   const u = clamp(((x - ax) * dx + (y - ay) * dy) / L), px = ax + dx * u, py = ay + dy * u; d = Math.min(d, Math.hypot(x - px, y - py)); } return d; };

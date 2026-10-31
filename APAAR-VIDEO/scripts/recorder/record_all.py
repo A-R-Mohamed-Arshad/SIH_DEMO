@@ -488,7 +488,11 @@ def s14_consent(b, st, R):
     finish(cs, R)
 
     c2 = Clip(vp, "s14_consent_result", OUT).start()
-    go(vp, "/verifier/requests", "text=Send request")
+    vp.goto(f"{BASE}/#/verifier/requests")
+    vp.reload()  # the list was loaded before the student answered
+    vp.wait_for_selector("text=Send request")
+    vp.wait_for_timeout(300)
+    settle_rules(vp)
     c2.click(vp.get_by_role("button", name="View result").first, "View result")
     vp.wait_for_selector("text=SIMULATED")
     row = vp.locator("tr", has_text="APPROVED").first

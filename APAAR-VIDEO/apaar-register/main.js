@@ -33,15 +33,25 @@ function setScreen(id) {
   doc.innerHTML = s.html; curScreen = id; doc.dataset.base = '1';
 }
 
+const SPAN = {};   // per screen: the document-space extent of every anchor the film uses, so scroll can be chosen to show them
+globalThis.__scrollFix = {};
 globalThis.__measure = (id, key) => {
   setScreen(id);
+  const base = SCREENS[id].scroll || 0;
   Object.assign(win.style, { display: '', left: FM.WINDOW.x + 'px', top: FM.WINDOW.y + 'px', width: FM.WINDOW.w + 'px', height: FM.WINDOW.h + 'px', transform: 'none', opacity: 1 });
-  doc.style.transform = `translateY(${-(SCREENS[id].scroll || 0)}px)`;
+  doc.style.transform = `translateY(${-base}px)`; doc.style.setProperty('--scroll', base + 'px');
   const el = CH.find(doc, key); if (!el) return null;
   const r = el.getBoundingClientRect(), v = win.querySelector('.f-vp').getBoundingClientRect();
-  return { x: r.left - v.left, y: r.top - v.top, w: r.width, h: r.height };
+  const top = r.top - v.top + base, bot = top + r.height;                  // document space
+  const s = SPAN[id] = SPAN[id] ? { top: Math.min(SPAN[id].top, top), bot: Math.max(SPAN[id].bot, bot) } : { top, bot };
+  let sc = base;
+  if (top - base < 24 || bot - base > 786) {                                // not comfortably in view: choose a scroll that shows the extent
+    const h = s.bot - s.top; sc = h <= 740 ? Math.max(0, s.top - (810 - h) / 2) : Math.max(0, s.top - 40);
+  }
+  globalThis.__scrollFix[id] = sc;
+  return { x: r.left - v.left, y: top - sc, w: r.width, h: r.height };
 };
-FM.build(lines);
+FM.build(lines); FM.build(lines);   // first pass learns every anchor extent (scroll choice), second is final
 window.DUR = FM.DUR;
 window.EV = EV.slice().sort((a, b) => a.t - b.t);
 window.SUBS = FM.SUBS;
@@ -60,7 +70,7 @@ function render(t) {
     Object.assign(win.style, { display: '', left: x + 'px', top: y + 'px', width: FM.WINDOW.w + 'px', height: FM.WINDOW.h + 'px', opacity: Wn.op,
       transform: `scale(${s})`, transformOrigin: Wn.origin || '50% 50%', filter: Wn.dim ? `brightness(${1 - Wn.dim * .45})` : '' });
     urlEl.textContent = Wn.url || 'apaar-student-register.vercel.app';
-    doc.style.transform = `translateY(${-(Wn.scroll ?? SCREENS[Wn.id].scroll ?? 0)}px)`;
+    { const sc = globalThis.__scrollFix[Wn.id] ?? SCREENS[Wn.id].scroll ?? 0; doc.style.transform = `translateY(${-sc}px)`; doc.style.setProperty('--scroll', sc + 'px'); }
     CH.mutate(doc, Wn, t, FM.T);
   } else win.style.display = 'none';
 

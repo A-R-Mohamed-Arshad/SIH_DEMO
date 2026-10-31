@@ -16,9 +16,9 @@ export function loadVoice(lines, words, durs) {
 /** Start of the n-th occurrence of `word` in line `id` (absolute seconds). Falls back to a character-share estimate. */
 export function W(id, word, n = 0, end = false) {
   const ws = WORDS[id];
-  if (ws && ws.length) { let k = 0; for (const [w, a, b] of ws) if (nrm(w) === nrm(word) && k++ === n) return VO[id] + Math.max(0, end ? b : a); }
+  if (ws && ws.length) { let k = 0; for (const [w, a, b] of ws) if ((nrm(w) === nrm(word) || (nrm(word).length > 3 && nrm(w).startsWith(nrm(word)))) && k++ === n) return VO[id] + Math.max(0, end ? b : a); }
   const text = TEXT[id] || '', toks = text.split(/\s+/); let k = 0, chars = 0; const total = text.length || 1;
-  for (const w of toks) { if (nrm(w) === nrm(word) && k++ === n) return VO[id] + (DURS[id] || 5) * ((chars + (end ? w.length : 0)) / total); chars += w.length + 1; }
+  for (const w of toks) { if (nrm(w).startsWith(nrm(word)) && k++ === n) return VO[id] + (DURS[id] || 5) * ((chars + (end ? w.length : 0)) / total); chars += w.length + 1; }
   throw new Error(`word "${word}" not in ${id}`);
 }
 export const WE = (id, word, n = 0) => W(id, word, n, true);
